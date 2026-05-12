@@ -1,0 +1,16 @@
+# Python dependencies for the Mithila-Panji scripts.
+#
+# Install with:
+#   pip install -r requirements.txt
+#
+# Tested with Python 3.10+.
+
+# DOCX parsing
+python-docx>=1.1.0
+
+# Devanagari ↔ IAST transliteration
+indic_transliteration>=2.3.55
+
+# Optional — needed only to push records directly to Neo4j from Python.
+# (You can also load the generated *.cypher files via Neo4j Browser without this.)
+neo4j>=5.18.0
