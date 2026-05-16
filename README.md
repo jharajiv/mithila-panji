@@ -74,6 +74,59 @@ The demo is read-only. Contributions go through GitHub issues — see
 
 ---
 
+## Upcoming RAG-based QA assistant
+
+This project is adding a retrieval-augmented generation (RAG) assistant that combines the structured Panji graph, extracted lineage records, and the historical background from [`docs/HISTORICAL_CONTEXT.md`]. The assistant is being designed to answer questions about the Panji tradition in a way that is both genealogically precise and historically grounded.
+
+The QA assistant can help with questions like:
+
+- What is the Maithil Panji system and why was it created in 1326 CE?
+- What do gotra, mool, and *Ādibīja* mean for Maithil Brahmin genealogy?
+- How did Panjikar registers support marriage eligibility checks?
+- Which lineage or sibling relationships are available in the current dataset?
+- What sources were used, and what data is still missing or incomplete?
+
+---
+
+## API service for panjikaran details
+
+A simple API backend is included in `main.py` and `ApiServices/panjiservices.py`. It is intended as the foundation for a Panjikaran detail service and a RAG-enabled knowledge layer.
+
+The current endpoints are:
+
+- `POST /load/` — upload document files to the vector database for indexing
+- `POST /query/` — query indexed documents to retrieve the most relevant Panji passages
+
+This service can power lineage lookup, Panji detail retrieval, and future QA assistant integrations.
+
+---
+
+## Run locally
+
+1. Create and activate a Python virtual environment:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+2. Install dependencies:
+   ```bash
+   python -m pip install --upgrade pip
+   python -m pip install chromadb fastapi uvicorn pandas python-multipart
+   python -m pip install -r scripts/requirements.txt
+   ```
+
+3. Start the API server:
+   ```bash
+   uvicorn main:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+4. Use the service:
+   - `POST http://localhost:8000/load/` with file uploads
+   - `POST http://localhost:8000/query/` with `query_text=...`
+
+---
+
 ## Repository layout
 
 ```
