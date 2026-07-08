@@ -132,7 +132,7 @@ Thakur, Jha & Jha (2009).
 
 ## Contact
 
-Maintained by **Rajiv Jha** — rajiv.jha@myvyoma.io.
+Maintained by **Rajiv Jha** — jharajiv@hotmai.com.
 
 This project belongs to the Maithil community as much as it belongs to its
 maintainers. Contributions, corrections, and questions are all welcome.
