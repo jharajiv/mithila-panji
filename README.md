@@ -49,8 +49,8 @@ manuscripts and contributions is designed to close.
 
 ## Try the live demo
 
-If a public AuraDB instance is configured, the demo at
-**https://&lt;your-github-username&gt;.github.io/mithila-panji/** lets you:
+The demo is a static, read-only GitHub Pages viewer powered by JSON graph exports.
+**https://jharajiv.github.io/mithila-panji/** lets you:
 
 - Search for a Maithil Brahmin ancestor by name (IAST, Devanagari, or
   ad-hoc romanisation like *Jha / Jhaa / Zha*).
