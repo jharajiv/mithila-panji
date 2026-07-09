@@ -94,10 +94,60 @@ jobs:
 
           person_by_id = {p["id"]: p for p in persons}
 
-          # Build graph sample with a manageable number of persons.
+                    # Build a relationship-centered graph sample.
+          # Instead of taking the first 500 people, we start from edges
+          # and include the persons connected by those edges.
+          max_edges = 350
           max_nodes = 500
-          sample_persons = persons[:max_nodes]
-          sample_ids = {p["id"] for p in sample_persons}
+
+          selected_edges = []
+          selected_ids = set()
+
+          def collect_edge(source, target, relationship):
+              source = (source or "").strip()
+              target = (target or "").strip()
+
+              if not source or not target:
+                  return
+
+              if source not in person_by_id or target not in person_by_id:
+                  return
+
+              if len(selected_edges) >= max_edges:
+                  return
+
+              if len(selected_ids | {source, target}) > max_nodes:
+                  return
+
+              selected_edges.append({
+                  "source": source,
+                  "target": target,
+                  "relationship": relationship
+              })
+
+              selected_ids.add(source)
+              selected_ids.add(target)
+
+          # Prefer parent-child edges because they show lineage structure.
+          # child_id,parent_id
+          for row in read_csv_rows(child_edges_csv):
+              collect_edge(
+                  row.get("child_id"),
+                  row.get("parent_id"),
+                  "CHILD_OF"
+              )
+
+          # Add sibling edges after lineage edges.
+          # person_a_id,person_b_id
+          for row in read_csv_rows(sibling_edges_csv):
+              collect_edge(
+                  row.get("person_a_id"),
+                  row.get("person_b_id"),
+                  "SIBLING_OF"
+              )
+
+          sample_persons = [person_by_id[pid] for pid in selected_ids if pid in person_by_id]
+          sample_persons.sort(key=lambda p: (p.get("label") or "").lower())
 
           elements = []
 
@@ -119,49 +169,30 @@ jobs:
 
           edge_count = 0
 
-          def add_edge(source, target, relationship):
-              global edge_count
-              source = (source or "").strip()
-              target = (target or "").strip()
-
-              if not source or not target:
-                  return
-
-              # Only include edges where both endpoints are in the sample graph.
-              if source not in sample_ids or target not in sample_ids:
-                  return
-
-              edge_id = f"{relationship}_{source}_{target}"
+          for edge in selected_edges:
+              edge_count += 1
+              edge_id = f"{edge['relationship']}_{edge['source']}_{edge['target']}_{edge_count}"
 
               elements.append({
                   "data": {
                       "id": edge_id,
-                      "source": source,
-                      "target": target,
-                      "relationship": relationship,
-                      "label": relationship
+                      "source": edge["source"],
+                      "target": edge["target"],
+                      "relationship": edge["relationship"],
+                      "label": edge["relationship"]
                   }
               })
-
-              edge_count += 1
-
-          # child_id,parent_id
-          for row in read_csv_rows(child_edges_csv):
-              add_edge(
-                  row.get("child_id"),
-                  row.get("parent_id"),
-                  "CHILD_OF"
-              )
-
-          # person_s_id,person_b_id
-          for row in read_csv_rows(sibling_edges_csv):
-              add_edge(
-                  row.get("person_a_id"),
-                  row.get("person_b_id"),
-                  "SIBLING_OF"
-              )
-
-          graph = {
+                        graph = {
+              "generated_from": [
+                  "data/persons.csv",
+                  "data/child_of_edges.csv",
+                  "data/sibling_of_edges.csv"
+              ],
+              "node_count_total": len(persons),
+              "node_count_in_sample": len(sample_persons),
+              "edge_count_in_sample": edge_count,
+              "elements": elements
+          }
               "generated_from": [
                   "data/persons.csv",
                   "data/child_of_edges.csv",
