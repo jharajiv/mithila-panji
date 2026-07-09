@@ -1,327 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mithila-Panji — Maithil Brahmin Lineage Explorer</title>
-<style>
-  :root {
-    --bg: #fafaf7;
-    --fg: #1d1d1b;
-    --muted: #6b6b66;
-    --accent: #8a2a2a;       /* deep mithila red */
-    --accent-soft: #f4e6e6;
-    --panel: #ffffff;
-    --line: #d8d5cf;
-    --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.04);
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.5;
-  }
-  header {
-    background: var(--accent);
-    color: #fff;
-    padding: 1rem 1.5rem;
-    box-shadow: var(--shadow);
-  }
-  header h1 { margin: 0; font-size: 1.4rem; font-weight: 700; }
-  header .sub { font-size: .9rem; font-style: italic; opacity: .9; }
-  header a { color: #fff; text-decoration: underline; }
-  main { max-width: 60rem; margin: 0 auto; padding: 1.5rem; }
-  .search-wrap { background: var(--panel); padding: 1rem 1.25rem;
-                 border: 1px solid var(--line); border-radius: 6px;
-                 box-shadow: var(--shadow); margin-bottom: 1.5rem; }
-  .search-wrap label { display: block; font-size: .9rem; color: var(--muted);
-                       margin-bottom: .35rem; }
-  #q { width: 100%; padding: .65rem .75rem; font-size: 1rem;
-       font-family: inherit; border: 1px solid var(--line); border-radius: 4px; }
-  .hint { font-size: .85rem; color: var(--muted); margin-top: .5rem; }
-  .results { display: grid; grid-template-columns: 1fr; gap: .75rem; }
-  .person { background: var(--panel); border: 1px solid var(--line);
-            border-radius: 6px; padding: .9rem 1.1rem; box-shadow: var(--shadow); }
-  .person h3 { margin: 0 0 .25rem; font-size: 1.05rem; }
-  .person .meta { color: var(--muted); font-size: .9rem; margin-bottom: .35rem; }
-  .person .tags { display: flex; flex-wrap: wrap; gap: .4rem;
-                  margin-top: .35rem; }
-  .tag { background: var(--accent-soft); color: var(--accent);
-         padding: .12rem .55rem; border-radius: 10rem; font-size: .8rem; }
-  .person .actions { margin-top: .55rem; }
-  .person button { background: transparent; border: 1px solid var(--accent);
-                   color: var(--accent); padding: .25rem .65rem;
-                   border-radius: 3rem; font-size: .82rem; cursor: pointer;
-                   margin-right: .35rem; font-family: inherit; }
-  .person button:hover { background: var(--accent-soft); }
-  .lineage { margin-top: .65rem; padding-left: 1rem;
-             border-left: 2px solid var(--accent-soft); }
-  .lineage .relation-label { font-size: .8rem; color: var(--muted);
-                             font-style: italic; margin: .35rem 0 .15rem; }
-  .lineage .rel-person { font-size: .9rem; padding: .1rem 0; }
-  .empty { color: var(--muted); padding: 2rem 0; text-align: center; }
-  .status { font-size: .85rem; color: var(--muted); padding: .4rem 0; }
-  .error { background: #fff4f4; border: 1px solid #e0b9b9; color: var(--accent);
-           padding: .65rem .85rem; border-radius: 4px; font-size: .9rem;
-           margin-bottom: 1rem; }
-  footer { max-width: 60rem; margin: 2rem auto; padding: 1rem 1.5rem;
-           color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
-  footer a { color: var(--accent); }
-  .stats { background: var(--panel); border: 1px solid var(--line);
-           border-radius: 6px; padding: .8rem 1.1rem; margin-bottom: 1.5rem;
-           display: flex; flex-wrap: wrap; gap: 1.25rem; font-size: .9rem; }
-  .stats .item strong { display: block; font-size: 1.4rem; color: var(--accent); }
-  .stats .item span { color: var(--muted); }
-</style>
+  <meta charset="utf-8" />
+  <title>Mithila Panji Lineage Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #222;
+    }
+
+    header {
+      padding: 22px;
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0 0 6px 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 0;
+      color: #555;
+    }
+
+    main {
+      padding: 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    input {
+      width: 100%;
+      max-width: 600px;
+      padding: 11px;
+      font-size: 16px;
+      margin-bottom: 16px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+    }
+
+    .notice {
+      background: #fff8e1;
+      border: 1px solid #e5d28a;
+      padding: 13px;
+      margin-bottom: 22px;
+      border-radius: 6px;
+      line-height: 1.45;
+    }
+
+    .result {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 13px;
+      margin: 9px 0;
+      border-radius: 6px;
+    }
+
+    .result strong {
+      font-size: 18px;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      background: #f6f6f6;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>Mithila Panji Lineage Viewer</h1>
+    <p>Static read-only demo for the Mithila Panji graph database project.</p>
+  </header>
 
-<header>
-  <h1>Mithila-Panji</h1>
-  <div class="sub">A graph-based lineage database for the Maithil Brahmins of Mithila &middot; <a href="https://github.com/REPLACE-WITH-YOUR-USERNAME/mithila-panji">view the project on GitHub</a></div>
-</header>
+  <main>
+    <div class="notice">
+      <strong>Research demo notice:</strong>
+      This is an early-stage preservation and research viewer. Records may contain transcription errors,
+      duplicate names, uncertain relationships, or incomplete lineage chains. Please verify all claims
+      against cited sources, Panjikar custodians, and family records. This demo should not be used as
+      final matrimonial, legal, caste, or identity authority.
+    </div>
 
-<main>
+    <h2>Search person records</h2>
+    <input id="searchBox" placeholder="Search by name, village, source, gotra, mool..." />
 
-<div id="config-warning" class="error" style="display:none">
-  This viewer is not yet configured. Open <code>docs/index.html</code> in a text
-  editor and replace the three placeholder values at the top of the
-  <code>&lt;script&gt;</code> block with your Neo4j AuraDB connection details.
-</div>
+    <div id="status">Loading data...</div>
+    <div id="results"></div>
 
-<div class="stats" id="stats">
-  <div class="item"><strong id="stat-persons">—</strong><span>Persons in graph</span></div>
-  <div class="item"><strong id="stat-gotras">—</strong><span>Gotras</span></div>
-  <div class="item"><strong id="stat-mools">—</strong><span>Mools</span></div>
-  <div class="item"><strong id="stat-trees">—</strong><span>Multi-person family trees</span></div>
-</div>
+    <footer>
+      Mithila Panji Digital Lineage Project · Static GitHub Pages viewer
+    </footer>
+  </main>
 
-<div class="search-wrap">
-  <label for="q">Search for an ancestor by name</label>
-  <input id="q" type="search" placeholder="e.g. vidyāpati, narahari, jayadeva, harinātha…" autofocus>
-  <div class="hint">
-    Type any part of a name (IAST or simple romanisation). Try
-    <a href="#" onclick="search('vidyāpati');return false">vidyāpati</a>,
-    <a href="#" onclick="search('harinātha');return false">harinātha</a>,
-    <a href="#" onclick="search('keśava');return false">keśava</a>,
-    or <a href="#" onclick="search('narahari');return false">narahari</a>.
-  </div>
-</div>
+  <script>
+    let persons = [];
 
-<div class="status" id="status"></div>
-<div class="results" id="results">
-  <div class="empty">Search above to explore the lineage graph.</div>
-</div>
-
-</main>
-
-<footer>
-  <p>
-    Data: <em>Genome Mapping (450 A.D. to 2009 A.D.) — Mithilak Panji Prabandh,
-    Vol. I–III.</em> Thakur, Gajendra; Jha, Nagendra Kumar; Jha, Panjikar Vidyanand.
-    Shruti Publication, New Delhi, 2009.
-    ISBN 978-81-907729-6-9.
-  </p>
-  <p>
-    Code MIT-licensed; data CC-BY-SA 4.0. Read the
-    <a href="article.md">project article</a> or
-    <a href="https://github.com/REPLACE-WITH-YOUR-USERNAME/mithila-panji/blob/main/CONTRIBUTING.md">how to contribute</a>.
-    The application is read-only and serves deceased ancestors only. Living
-    individuals and recent generations are not part of the public corpus.
-  </p>
-</footer>
-
-<script>
-// =============================================================================
-// CONFIGURATION — replace these three values with YOUR Neo4j AuraDB details.
-// See docs/MVP_SETUP.md, Step 6.
-// =============================================================================
-const NEO4J_QUERY_URL = "https://REPLACE-WITH-YOUR-INSTANCE.databases.neo4j.io/db/neo4j/query/v2";
-const NEO4J_USER      = "reader";
-const NEO4J_PASSWORD  = "REPLACE-WITH-A-LONG-RANDOM-STRING";
-// =============================================================================
-
-const $q       = document.getElementById('q');
-const $results = document.getElementById('results');
-const $status  = document.getElementById('status');
-const $warn    = document.getElementById('config-warning');
-
-if (NEO4J_QUERY_URL.includes('REPLACE-WITH-YOUR-INSTANCE')
-    || NEO4J_PASSWORD.includes('REPLACE-WITH-A-LONG')) {
-  $warn.style.display = 'block';
-}
-
-async function runCypher(stmt, params = {}) {
-  const auth = btoa(`${NEO4J_USER}:${NEO4J_PASSWORD}`);
-  const res = await fetch(NEO4J_QUERY_URL, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-      'Authorization': `Basic ${auth}`
-    },
-    body: JSON.stringify({ statement: stmt, parameters: params })
-  });
-  if (!res.ok) {
-    throw new Error(`Neo4j ${res.status}: ${await res.text()}`);
-  }
-  const json = await res.json();
-  // Aura Query API v2 returns {data: {fields, values}, errors}
-  if (json.errors && json.errors.length) {
-    throw new Error(json.errors[0].message);
-  }
-  return json;
-}
-
-function esc(s) {
-  return (s || '').toString()
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-async function loadStats() {
-  try {
-    const r = await runCypher(`
-      OPTIONAL MATCH (p:Person)
-      WITH count(p) AS p_count
-      OPTIONAL MATCH (g:Gotra)
-      WITH p_count, count(g) AS g_count
-      OPTIONAL MATCH (m:Mool)
-      WITH p_count, g_count, count(m) AS m_count
-      RETURN p_count, g_count, m_count
-    `);
-    const [pCount, gCount, mCount] = r.data.values[0];
-    document.getElementById('stat-persons').textContent = pCount.toLocaleString();
-    document.getElementById('stat-gotras').textContent  = gCount.toLocaleString();
-    document.getElementById('stat-mools').textContent   = mCount.toLocaleString();
-  } catch (e) {
-    console.warn('Stats load failed:', e);
-  }
-  try {
-    const r = await runCypher(`
-      MATCH (p:Person)-[:CHILD_OF]->(parent:Person)
-      WITH parent, count(p) AS kids
-      WHERE kids >= 1
-      RETURN count(DISTINCT parent) AS trees
-    `);
-    document.getElementById('stat-trees').textContent
-      = r.data.values[0][0].toLocaleString();
-  } catch (e) { /* ignore */ }
-}
-
-async function search(qParam) {
-  const q = (qParam ?? $q.value).trim();
-  if (qParam) $q.value = q;
-  if (!q) {
-    $results.innerHTML = '<div class="empty">Search above to explore the lineage graph.</div>';
-    $status.textContent = '';
-    return;
-  }
-
-  $status.textContent = `Searching for “${q}”…`;
-  $results.innerHTML = '';
-
-  try {
-    const r = await runCypher(`
-      MATCH (p:Person)
-      WHERE toLower(p.name_roman) CONTAINS toLower($q)
-         OR p.name_dev CONTAINS $q
-      OPTIONAL MATCH (p)-[:FROM_VILLAGE]->(v:Village)
-      OPTIONAL MATCH (p)-[:OF_MOOL_GUESS]->(m:Mool)
-      OPTIONAL MATCH (m)-[:IN_GOTRA]->(g:Gotra)
-      RETURN p.id, p.name_roman, p.name_dev, p.source_ref,
-             v.name_roman, collect(DISTINCT m.name_roman) AS mools,
-             collect(DISTINCT g.name_roman) AS gotras
-      LIMIT 25
-    `, { q });
-
-    const rows = r.data.values;
-    if (!rows.length) {
-      $results.innerHTML = `<div class="empty">No matches for “${esc(q)}”. Try a partial name, or check for transliteration alternatives.</div>`;
-      $status.textContent = '';
-      return;
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
     }
-    $status.textContent = `${rows.length} match${rows.length === 1 ? '' : 'es'}.`;
-    $results.innerHTML = rows.map(([id, romName, devName, ref, village, mools, gotras]) => `
-      <div class="person" data-id="${esc(id)}">
-        <h3>${esc(romName)} ${devName ? `<span style="color:var(--muted);font-weight:normal;font-size:.95rem">${esc(devName)}</span>` : ''}</h3>
-        ${village ? `<div class="meta">from <em>${esc(village)}</em>${ref ? ` &middot; ref. ${esc(ref)}` : ''}</div>` : (ref ? `<div class="meta">ref. ${esc(ref)}</div>` : '')}
-        <div class="tags">
-          ${(mools || []).filter(Boolean).map(m => `<span class="tag">mool: ${esc(m)}</span>`).join('')}
-          ${(gotras || []).filter(Boolean).map(g => `<span class="tag">gotra: ${esc(g)}</span>`).join('')}
+
+    function valueText(value) {
+      if (value === null || value === undefined) return "";
+      if (Array.isArray(value)) return value.join(" ");
+      if (typeof value === "object") return JSON.stringify(value);
+      return String(value);
+    }
+
+    function personSearchText(person) {
+      return Object.values(person).map(valueText).join(" ").toLowerCase();
+    }
+
+    function renderPerson(person) {
+      const name =
+        person.name ||
+        person.full_name ||
+        person.person_name ||
+        person.name_roman ||
+        person.name_dev ||
+        person.label ||
+        person.id ||
+        "Unnamed record";
+
+      const nameDev = person.name_dev || "";
+      const villageDev = person.village_dev || "";
+      const villageRoman = person.village_roman || "";
+      const gotra = person.gotra || "";
+      const mool = person.mool || "";
+      const sourceRef = person.source_ref || "";
+      const sourceFile = person.source_file || "";
+
+      const details = [
+        gotra ? "Gotra: " + gotra : "",
+        mool ? "Mool: " + mool : "",
+        villageRoman ? "Village: " + villageRoman : "",
+        villageDev ? "Village Devanagari: " + villageDev : "",
+        sourceRef ? "Source: " + sourceRef : ""
+      ].filter(Boolean).join(" | ");
+
+      return `
+        <div class="result">
+          <strong>${escapeHtml(name)}</strong>
+          ${nameDev && nameDev !== name ? `<div>${escapeHtml(nameDev)}</div>` : ""}
+          <div class="muted">${escapeHtml(details || "No additional metadata available")}</div>
+          ${sourceFile ? `<div class="muted">Source file: ${escapeHtml(sourceFile)}</div>` : ""}
+          <details>
+            <summary>View raw record</summary>
+            <pre>${escapeHtml(JSON.stringify(person, null, 2))}</pre>
+          </details>
         </div>
-        <div class="actions">
-          <button onclick="expand('${esc(id)}','parents',this)">show parents</button>
-          <button onclick="expand('${esc(id)}','children',this)">show children</button>
-          <button onclick="expand('${esc(id)}','siblings',this)">show siblings</button>
-          <button onclick="expand('${esc(id)}','ancestry',this)">trace to Ādibīja</button>
-        </div>
-        <div class="lineage" id="lin-${esc(id)}"></div>
-      </div>
-    `).join('');
-  } catch (e) {
-    $results.innerHTML = `<div class="error">Query failed: ${esc(e.message)}</div>`;
-    $status.textContent = '';
-  }
-}
-
-async function expand(id, mode, btn) {
-  const cont = document.getElementById('lin-' + id);
-  const heading = { parents: 'Parents', children: 'Children',
-                    siblings: 'Siblings', ancestry: 'Ancestry to Ādibīja' }[mode];
-  btn.disabled = true;
-  cont.innerHTML += `<div class="relation-label">${heading}</div><div class="rel-person">Loading…</div>`;
-  const loadingDiv = cont.lastElementChild;
-  try {
-    let stmt;
-    if (mode === 'parents') {
-      stmt = `MATCH (p:Person {id:$id})-[:CHILD_OF]->(parent:Person)
-              RETURN parent.name_roman, parent.name_dev`;
-    } else if (mode === 'children') {
-      stmt = `MATCH (p:Person {id:$id})<-[:CHILD_OF]-(child:Person)
-              RETURN child.name_roman, child.name_dev`;
-    } else if (mode === 'siblings') {
-      stmt = `MATCH (p:Person {id:$id})-[:SIBLING_OF]-(s:Person)
-              RETURN s.name_roman, s.name_dev`;
-    } else { // ancestry
-      stmt = `MATCH path = (p:Person {id:$id})-[:CHILD_OF*1..15]->(a:Person)
-              WHERE NOT (a)-[:CHILD_OF]->(:Person)
-              WITH path, nodes(path) AS ns
-              RETURN [n IN ns | n.name_roman] AS chain LIMIT 1`;
+      `;
     }
-    const r = await runCypher(stmt, { id });
-    const rows = r.data.values;
-    if (mode === 'ancestry') {
-      if (!rows.length) { loadingDiv.textContent = 'No ancestry chain found.'; return; }
-      loadingDiv.innerHTML = rows[0][0]
-        .map((name, i) => `${i ? ' → ' : ''}${esc(name)}`)
-        .join('');
-    } else {
-      if (!rows.length) { loadingDiv.textContent = `No ${mode} recorded.`; return; }
-      loadingDiv.innerHTML = rows.map(([rom, dev]) =>
-        `${esc(rom)}${dev ? ` <span style="color:var(--muted)">(${esc(dev)})</span>` : ''}`
-      ).join('<br>');
+
+    function runSearch() {
+      const query = document.getElementById("searchBox").value.trim().toLowerCase();
+      const results = document.getElementById("results");
+
+      if (!query) {
+        results.innerHTML = "";
+        return;
+      }
+
+      const matches = persons
+        .filter(person => personSearchText(person).includes(query))
+        .slice(0, 50);
+
+      if (matches.length === 0) {
+        results.innerHTML = "<p>No matching records found.</p>";
+        return;
+      }
+
+      results.innerHTML = `
+        <p>Showing ${matches.length} matching records. Refine your search for more specific results.</p>
+        ${matches.map(renderPerson).join("")}
+      `;
     }
-  } catch (e) {
-    loadingDiv.innerHTML = `<span class="error">${esc(e.message)}</span>`;
-  } finally {
-    btn.disabled = false;
-  }
-}
 
-let timer;
-$q.addEventListener('input', () => {
-  clearTimeout(timer);
-  timer = setTimeout(() => search(), 350);
-});
-$q.addEventListener('keydown', e => { if (e.key === 'Enter') search(); });
+    async function loadData() {
+      try {
+        const response = await fetch("data/persons.json");
 
-window.addEventListener('load', loadStats);
-window.search = search;
-window.expand = expand;
-</script>
+        if (!response.ok) {
+          throw new Error("Could not load data/persons.json");
+        }
 
+        const data = await response.json();
+
+        if (Array.isArray(data)) {
+          persons = data;
+        } else if (Array.isArray(data.persons)) {
+          persons = data.persons;
+        } else if (Array.isArray(data.records)) {
+          persons = data.records;
+        } else {
+          throw new Error("Could not find a persons array in persons.json");
+        }
+
+        document.getElementById("status").textContent =
+          `Loaded ${persons.length.toLocaleString()} person records. Enter a search term above.`;
+      } catch (error) {
+        document.getElementById("status").textContent =
+          "Error loading data: " + error.message;
+      }
+    }
+
+    document.getElementById("searchBox").addEventListener("input", runSearch);
+    loadData();
+  </script>
 </body>
 </html>
