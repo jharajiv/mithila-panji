@@ -150,24 +150,23 @@
 
         <div id="status">Loading data...</div>
     <div id="results"></div>
-
     <section class="viewer-section">
-      <h2>Graph sample view</h2>
-      <p class="muted">
-        This is an early sample graph generated from the static data. Relationship edges will be added in a later step.
-      </p>
+  <h2>Graph sample view</h2>
+  <p class="muted">
+    This is an early sample graph generated from the static data. Relationship edges will be added later.
+  </p>
 
-      <div class="graph-toolbar">
-        <button onclick="loadGraph()">Load graph sample</button>
-        <button onclick="fitGraph()">Fit graph</button>
-      </div>
+  <div class="graph-toolbar">
+    <button onclick="loadGraph()">Load graph sample</button>
+    <button onclick="fitGraph()">Fit graph</button>
+  </div>
 
-      <div id="cy"></div>
+  <div id="cy" style="width:100%; height:650px; background:#ffffff; border:1px solid #ddd; border-radius:6px; margin-top:12px;"></div>
 
-      <div id="nodeDetails">
-        Click a node in the graph to view details.
-      </div>
-    </section>
+  <div id="nodeDetails" style="background:#ffffff; border:1px solid #ddd; padding:12px; border-radius:6px; margin-top:12px;">
+    Click “Load graph sample” to view the graph.
+  </div>
+</section>
 
     <footer>
       Mithila Panji Digital Lineage Project · Static GitHub Pages viewer
@@ -408,6 +407,87 @@ const matches = persons
     }
 
     document.getElementById("searchBox").addEventListener("input", runSearch);
+    let cy = null;
+
+async function loadGraph() {
+  try {
+    const response = await fetch("data/graph_sample.json");
+
+    if (!response.ok) {
+      throw new Error("Could not load data/graph_sample.json");
+    }
+
+    const graph = await response.json();
+    const elements = Array.isArray(graph.elements) ? graph.elements : graph;
+
+    cy = cytoscape({
+      container: document.getElementById("cy"),
+      elements: elements,
+      style: [
+        {
+          selector: "node",
+          style: {
+            "label": "data(label)",
+            "font-size": "9px",
+            "text-valign": "center",
+            "text-halign": "center",
+            "background-color": "#607d8b",
+            "color": "#222",
+            "width": 28,
+            "height": 28
+          }
+        },
+        {
+          selector: "edge",
+          style: {
+            "width": 1,
+            "line-color": "#aaa",
+            "target-arrow-color": "#aaa",
+            "target-arrow-shape": "triangle",
+            "curve-style": "bezier",
+            "label": "data(relationship)",
+            "font-size": "8px"
+          }
+        }
+      ],
+      layout: {
+        name: "cose",
+        animate: false,
+        fit: true,
+        padding: 30
+      }
+    });
+
+    cy.on("tap", "node", function(event) {
+      const data = event.target.data();
+
+      document.getElementById("nodeDetails").innerHTML = `
+        <strong>${escapeHtml(data.label || data.id)}</strong>
+        <div class="muted">ID: ${escapeHtml(data.id || "")}</div>
+        ${data.name_dev ? `<div>Name Devanagari: ${escapeHtml(data.name_dev)}</div>` : ""}
+        ${data.name_roman ? `<div>Name Roman: ${escapeHtml(data.name_roman)}</div>` : ""}
+        ${data.village_dev ? `<div>Village Devanagari: ${escapeHtml(data.village_dev)}</div>` : ""}
+        ${data.village_roman ? `<div>Village Roman: ${escapeHtml(data.village_roman)}</div>` : ""}
+        ${data.gotra ? `<div>Gotra: ${escapeHtml(data.gotra)}</div>` : ""}
+        ${data.mool ? `<div>Mool: ${escapeHtml(data.mool)}</div>` : ""}
+        ${data.source_ref ? `<div>Source: ${escapeHtml(data.source_ref)}</div>` : ""}
+      `;
+    });
+
+    document.getElementById("nodeDetails").textContent =
+      `Loaded graph sample with ${cy.nodes().length} nodes and ${cy.edges().length} edges. Click a node to view details.`;
+
+  } catch (error) {
+    document.getElementById("nodeDetails").textContent =
+      "Error loading graph: " + error.message;
+  }
+}
+
+function fitGraph() {
+  if (cy) {
+    cy.fit();
+  }
+}
     loadData();
   </script>
 </body>
