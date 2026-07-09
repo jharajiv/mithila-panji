@@ -52,7 +52,6 @@ jobs:
 
           with persons_csv.open("r", encoding="utf-8-sig", newline="") as f:
               reader = csv.DictReader(f)
-
               for row in reader:
                   person_id = (row.get("id") or row.get("person_id") or "").strip()
                   if not person_id:
@@ -94,9 +93,6 @@ jobs:
 
           person_by_id = {p["id"]: p for p in persons}
 
-                    # Build a relationship-centered graph sample.
-          # Instead of taking the first 500 people, we start from edges
-          # and include the persons connected by those edges.
           max_edges = 350
           max_nodes = 500
 
@@ -128,8 +124,6 @@ jobs:
               selected_ids.add(source)
               selected_ids.add(target)
 
-          # Prefer parent-child edges because they show lineage structure.
-          # child_id,parent_id
           for row in read_csv_rows(child_edges_csv):
               collect_edge(
                   row.get("child_id"),
@@ -137,8 +131,6 @@ jobs:
                   "CHILD_OF"
               )
 
-          # Add sibling edges after lineage edges.
-          # person_a_id,person_b_id
           for row in read_csv_rows(sibling_edges_csv):
               collect_edge(
                   row.get("person_a_id"),
@@ -182,17 +174,8 @@ jobs:
                       "label": edge["relationship"]
                   }
               })
-                        graph = {
-              "generated_from": [
-                  "data/persons.csv",
-                  "data/child_of_edges.csv",
-                  "data/sibling_of_edges.csv"
-              ],
-              "node_count_total": len(persons),
-              "node_count_in_sample": len(sample_persons),
-              "edge_count_in_sample": edge_count,
-              "elements": elements
-          }
+
+          graph = {
               "generated_from": [
                   "data/persons.csv",
                   "data/child_of_edges.csv",
@@ -219,5 +202,5 @@ jobs:
           git config user.email "github-actions@github.com"
           git add docs/data/persons.json docs/data/graph_sample.json
           git status
-          git commit -m "Generate static graph data with relationship edges" || echo "No changes to commit"
+          git commit -m "Build relationship-centered graph sample" || echo "No changes to commit"
           git push
