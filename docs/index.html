@@ -135,9 +135,43 @@
       return String(value);
     }
 
-    function personSearchText(person) {
-      return Object.values(person).map(valueText).join(" ").toLowerCase();
-    }
+    function normalizeSearchText(text) {
+  return String(text || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+const searchAliases = {
+  "jha": ["झा", "jha"],
+  "mishra": ["मिश्र", "misra", "mishra"],
+  "misra": ["मिश्र", "misra", "mishra"],
+  "thakur": ["ठाकुर", "thakur"],
+  "pathak": ["पाठक", "pathak"],
+  "chaudhary": ["चौधरी", "chaudhary", "chaudhari"],
+  "choudhary": ["चौधरी", "chaudhary", "choudhary"],
+  "kumar": ["कुमार", "kumar"],
+  "nath": ["नाथ", "nath"],
+  "sharma": ["शर्मा", "sharma"],
+  "upadhyay": ["उपाध्याय", "upadhyay", "upadhyaya"],
+  "acharya": ["आचार्य", "acharya"],
+  "ojha": ["ओझा", "ojha"],
+  "roy": ["राय", "rai", "ray", "roy"],
+  "rai": ["राय", "rai", "ray", "roy"],
+  "pandey": ["पाण्डेय", "पांडेय", "pandey", "panday"],
+  "pandit": ["पंडित", "पण्डित", "pandit"]
+};
+
+function expandQuery(query) {
+  const normalized = normalizeSearchText(query);
+  const aliases = searchAliases[normalized] || [query];
+  return aliases.map(normalizeSearchText);
+}
+
+function personSearchText(person) {
+  const baseText = Object.values(person).map(valueText).join(" ");
+  return normalizeSearchText(baseText);
+}
 
     function renderPerson(person) {
       const name =
