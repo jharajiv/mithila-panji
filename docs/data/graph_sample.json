@@ -1,0 +1,6008 @@
+{
+  "generated_from": "data/persons.csv",
+  "node_count_total": 1888,
+  "node_count_in_sample": 500,
+  "edge_count_in_sample": 0,
+  "elements": [
+    {
+      "data": {
+        "id": "172d9634918f",
+        "label": "1.hunaka",
+        "name_dev": "१.हुनक",
+        "name_roman": "1.hunaka",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5f2fd6c3a59f",
+        "label": "2.tanika",
+        "name_dev": "२.तनिक",
+        "name_roman": "2.tanika",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "437a70d96eba",
+        "label": "3.hunaka",
+        "name_dev": "३.हुनक",
+        "name_roman": "3.hunaka",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "46295d0b0c46",
+        "label": "4.tanika",
+        "name_dev": "४.तनिक",
+        "name_roman": "4.tanika",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b52e537c664c",
+        "label": "5.ā",
+        "name_dev": "५.आ",
+        "name_roman": "5.ā",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2d002b5842c9",
+        "label": "6.astu,",
+        "name_dev": "६.अस्तु,",
+        "name_roman": "6.astu,",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "be75ec8cebd6",
+        "label": "abhinanda",
+        "name_dev": "अभिनन्द",
+        "name_roman": "abhinanda",
+        "village_dev": "महुआ",
+        "village_roman": "mahuā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d84b712334a5",
+        "label": "acchapati",
+        "name_dev": "अच्छपति",
+        "name_roman": "acchapati",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "112//08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "130be6c45abc",
+        "label": "acyuta",
+        "name_dev": "अच्युत",
+        "name_roman": "acyuta",
+        "village_dev": "कटका सोदरपुर",
+        "village_roman": "kaṭakā sodarapura",
+        "source_ref": "131/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1d54c84f3fd9",
+        "label": "adhikārī",
+        "name_dev": "अधिकारी",
+        "name_roman": "adhikārī",
+        "village_dev": "दिघो",
+        "village_roman": "digho",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0dcb86224158",
+        "label": "adhyāpaka",
+        "name_dev": "अध्यापक",
+        "name_roman": "adhyāpaka",
+        "village_dev": "वहिष्कृतां तत: श्री मत्यां बासुदेवा सुतो जाता बुधवाल",
+        "village_roman": "vahiṣkṛtāṃ tata: śrī matyāṃ bāsudevā suto jātā budhavāla",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f2e570387ba7",
+        "label": "adhyāpaka",
+        "name_dev": "अध्यापक",
+        "name_roman": "adhyāpaka",
+        "village_dev": "बेलसाम बूधवाल",
+        "village_roman": "belasāma būdhavāla",
+        "source_ref": "316-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "eafb4c47d408",
+        "label": "adhārī",
+        "name_dev": "अधारी",
+        "name_roman": "adhārī",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "110/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "532e085549f2",
+        "label": "agnihonika dhanañjaya",
+        "name_dev": "अग्निहोनिक धनञ्जय",
+        "name_roman": "agnihonika dhanañjaya",
+        "village_dev": "महाआ",
+        "village_roman": "mahāā",
+        "source_ref": "04/04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f8b9bd19899d",
+        "label": "agnihotrika",
+        "name_dev": "अग्निहोत्रिक",
+        "name_roman": "agnihotrika",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "419-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5073b5310b84",
+        "label": "agnihotrika radhunātha",
+        "name_dev": "अग्निहोत्रिक रधुनाथ",
+        "name_roman": "agnihotrika radhunātha",
+        "village_dev": "बुधवाल",
+        "village_roman": "budhavāla",
+        "source_ref": "100-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3b924cc944c5",
+        "label": "agnihotrika viśvambhara",
+        "name_dev": "अग्निहोत्रिक विश्वम्भर",
+        "name_roman": "agnihotrika viśvambhara",
+        "village_dev": "खण्डवला",
+        "village_roman": "khaṇḍavalā",
+        "source_ref": "32/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "65aea829b740",
+        "label": "agnihotrika viśvambhara",
+        "name_dev": "अग्निहोत्रिक विश्वम्भर",
+        "name_roman": "agnihotrika viśvambhara",
+        "village_dev": "खण्डबला",
+        "village_roman": "khaṇḍabalā",
+        "source_ref": "63-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6b4db68b0beb",
+        "label": "ai nipāla nārāyaṇa",
+        "name_dev": "ऐ निपाल नारायण",
+        "name_roman": "ai nipāla nārāyaṇa",
+        "village_dev": "नगरामजगतपुर उइनि",
+        "village_roman": "nagarāmajagatapura uini",
+        "source_ref": "313=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8f64369c7486",
+        "label": "ajayasiṃha",
+        "name_dev": "अजयसिंह",
+        "name_roman": "ajayasiṃha",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "01//09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "def63d42494f",
+        "label": "akhurī-thakamāne",
+        "name_dev": "अखुरी-थकमाने",
+        "name_roman": "akhurī-thakamāne",
+        "village_dev": "जेजिवाल",
+        "village_roman": "jejivāla",
+        "source_ref": "12/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bdaa2e37164e",
+        "label": "alaṃkāra",
+        "name_dev": "अलंकार",
+        "name_roman": "alaṃkāra",
+        "village_dev": "बहेराढ़ी",
+        "village_roman": "baherār̤hī",
+        "source_ref": "67//08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f32101e2abdf",
+        "label": "amarū",
+        "name_dev": "अमरू",
+        "name_roman": "amarū",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "79/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6484eb98f898",
+        "label": "amogha",
+        "name_dev": "अमोघ",
+        "name_roman": "amogha",
+        "village_dev": "सुइरी",
+        "village_roman": "suirī",
+        "source_ref": "379=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7a60bda1ea18",
+        "label": "amṛtanātha",
+        "name_dev": "अमृतनाथ",
+        "name_roman": "amṛtanātha",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "75//08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d21754b9dc2b",
+        "label": "ananta",
+        "name_dev": "अनन्त",
+        "name_roman": "ananta",
+        "village_dev": "बिठौली वलियास",
+        "village_roman": "biṭhaulī valiyāsa",
+        "source_ref": "179-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a2399d1f3246",
+        "label": "ananta",
+        "name_dev": "अनन्त",
+        "name_roman": "ananta",
+        "village_dev": "हरिअम",
+        "village_roman": "hariama",
+        "source_ref": "90/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8a3f1c166494",
+        "label": "ananta",
+        "name_dev": "अनन्त",
+        "name_roman": "ananta",
+        "village_dev": "वत्सवाल नरउन",
+        "village_roman": "vatsavāla narauna",
+        "source_ref": "213=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2a7fd739e218",
+        "label": "andī",
+        "name_dev": "अन्दी",
+        "name_roman": "andī",
+        "village_dev": "काको बेलउँच",
+        "village_roman": "kāko belau~ca",
+        "source_ref": "499=",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2b324e2a571f",
+        "label": "andījhā",
+        "name_dev": "अन्दीझा",
+        "name_roman": "andījhā",
+        "village_dev": "फनन्दह",
+        "village_roman": "phanandaha",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b265a1393137",
+        "label": "anhī",
+        "name_dev": "अन्ही",
+        "name_roman": "anhī",
+        "village_dev": "नगराम काको बेलउँच",
+        "village_roman": "nagarāma kāko belau~ca",
+        "source_ref": "493-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "24a0582aa935",
+        "label": "anirūddha",
+        "name_dev": "अनिरूद्ध",
+        "name_roman": "anirūddha",
+        "village_dev": "नडुआल माण्डर",
+        "village_roman": "naḍuāla māṇḍara",
+        "source_ref": "91/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9fbf9b25075f",
+        "label": "anirūddha",
+        "name_dev": "अनिरूद्ध",
+        "name_roman": "anirūddha",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "78=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fd1e2aaf838f",
+        "label": "apūcha",
+        "name_dev": "अपूछ",
+        "name_roman": "apūcha",
+        "village_dev": "रखवारी हरिअम्व",
+        "village_roman": "rakhavārī hariamva",
+        "source_ref": "40-8",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5c3d695c658a",
+        "label": "arivinda",
+        "name_dev": "अरिविन्द",
+        "name_roman": "arivinda",
+        "village_dev": "कन्हौली बेलउँच",
+        "village_roman": "kanhaulī belau~ca",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "072f7a0d62c9",
+        "label": "arjuna",
+        "name_dev": "अर्जुन",
+        "name_roman": "arjuna",
+        "village_dev": "सकराढ़ी",
+        "village_roman": "sakarār̤hī",
+        "source_ref": "67/04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5905349aee67",
+        "label": "arjuna",
+        "name_dev": "अर्जुन",
+        "name_roman": "arjuna",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "97-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9a808bb5954a",
+        "label": "arthapati",
+        "name_dev": "अर्थपति",
+        "name_roman": "arthapati",
+        "village_dev": "पिहवाल",
+        "village_roman": "pihavāla",
+        "source_ref": "44=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "03abe2ed73cb",
+        "label": "atrasthāne",
+        "name_dev": "अत्रस्थाने",
+        "name_roman": "atrasthāne",
+        "village_dev": "देवानन्द पञ्जी ३३९-३ जगदगुरू गंगेश सुत सुपन दौ भण्डारिसम",
+        "village_roman": "devānanda pañjī 339-3 jagadagurū gaṃgeśa suta supana dau bhaṇḍārisama",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3e4f5860224d",
+        "label": "avilamba",
+        "name_dev": "अविलम्ब",
+        "name_roman": "avilamba",
+        "village_dev": "नरउन",
+        "village_roman": "narauna",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e03a650105f5",
+        "label": "aṣṭa grāmī purūṣottama",
+        "name_dev": "अष्ट ग्रामी पुरूषोत्तम",
+        "name_roman": "aṣṭa grāmī purūṣottama",
+        "village_dev": "लहण्डा गंगोली",
+        "village_roman": "lahaṇḍā gaṃgolī",
+        "source_ref": "344=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2e7bb60ef42e",
+        "label": "aṭhaharavāsī jīveśvara",
+        "name_dev": "अठहरवासी जीवेश्वर",
+        "name_roman": "aṭhaharavāsī jīveśvara",
+        "village_dev": "हड़हत पनिचोभ",
+        "village_roman": "har̤ahata panicobha",
+        "source_ref": "215=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "90d0586f5c6b",
+        "label": "ba.32-7",
+        "name_dev": "ब.३२-७",
+        "name_roman": "ba.32-7",
+        "village_dev": "हड़री सकराढ़ी",
+        "village_roman": "har̤arī sakarār̤hī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "50f9156ea9ea",
+        "label": "baccū.",
+        "name_dev": "बच्चू.",
+        "name_roman": "baccū.",
+        "village_dev": "सतलखा",
+        "village_roman": "satalakhā",
+        "source_ref": "130/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7bd72c02acd3",
+        "label": "bachāī",
+        "name_dev": "बछाई",
+        "name_roman": "bachāī",
+        "village_dev": "गौर सोदरपुर",
+        "village_roman": "gaura sodarapura",
+        "source_ref": "310=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3f20ee51f919",
+        "label": "badhira ghanaśyāma",
+        "name_dev": "बधिर घनश्याम",
+        "name_roman": "badhira ghanaśyāma",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "338-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "15c8004c57bc",
+        "label": "badhāī",
+        "name_dev": "बधाई",
+        "name_roman": "badhāī",
+        "village_dev": "मंगरौनी पाली",
+        "village_roman": "maṃgaraunī pālī",
+        "source_ref": "110/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "480b8c748e48",
+        "label": "baher̤ī",
+        "name_dev": "बहेड़ी",
+        "name_roman": "baher̤ī",
+        "village_dev": "बहेड़ा बेलउँच",
+        "village_roman": "baher̤ā belau~ca",
+        "source_ref": "61-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9893c10902fe",
+        "label": "balabhadra",
+        "name_dev": "बलभद्र",
+        "name_roman": "balabhadra",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "71//03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5a3e2a8ff9d7",
+        "label": "balabhadra",
+        "name_dev": "बलभद्र",
+        "name_roman": "balabhadra",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "128/023",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "754fd06f1239",
+        "label": "balabhadra",
+        "name_dev": "बलभद्र",
+        "name_roman": "balabhadra",
+        "village_dev": "२१८//०१ भौर खण्डबला",
+        "village_roman": "218//01 bhaura khaṇḍabalā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6732b02dc099",
+        "label": "balabhadra",
+        "name_dev": "बलभद्र",
+        "name_roman": "balabhadra",
+        "village_dev": "सुसैना अलय",
+        "village_roman": "susainā alaya",
+        "source_ref": "51-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8fa2df68a6ca",
+        "label": "baladeva",
+        "name_dev": "बलदेव",
+        "name_roman": "baladeva",
+        "village_dev": "नगराम जगति पबौली",
+        "village_roman": "nagarāma jagati pabaulī",
+        "source_ref": "51=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "351d98f4f77b",
+        "label": "ballī",
+        "name_dev": "बल्ली",
+        "name_roman": "ballī",
+        "village_dev": "रूचौली एकहरा",
+        "village_roman": "rūcaulī ekaharā",
+        "source_ref": "233-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f900e8242b9e",
+        "label": "bandhu",
+        "name_dev": "बन्धु",
+        "name_roman": "bandhu",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "98//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "176b582cda2b",
+        "label": "bandhu",
+        "name_dev": "बन्धु",
+        "name_roman": "bandhu",
+        "village_dev": "कटका सोदरपुर",
+        "village_roman": "kaṭakā sodarapura",
+        "source_ref": "175=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "24ea23101755",
+        "label": "bandhu",
+        "name_dev": "बन्धु",
+        "name_roman": "bandhu",
+        "village_dev": "छामूसकराढ़ी",
+        "village_roman": "chāmūsakarār̤hī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9c32f9ef5636",
+        "label": "basāuna",
+        "name_dev": "बसाउन",
+        "name_roman": "basāuna",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "53//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "764de446cc22",
+        "label": "batahā",
+        "name_dev": "बतहा",
+        "name_roman": "batahā",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "112//07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d12dc6c386f8",
+        "label": "bavanū devāna nagarāma",
+        "name_dev": "बवनू देवान नगराम",
+        "name_roman": "bavanū devāna nagarāma",
+        "village_dev": "समौली पाली",
+        "village_roman": "samaulī pālī",
+        "source_ref": "178-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b5682b0ffc16",
+        "label": "baṭeśvara",
+        "name_dev": "बटेश्वर",
+        "name_roman": "baṭeśvara",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0793a9989c58",
+        "label": "baṭāu~",
+        "name_dev": "बटाउँ",
+        "name_roman": "baṭāu~",
+        "village_dev": "सकुरी माण्डर",
+        "village_roman": "sakurī māṇḍara",
+        "source_ref": "404=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "482b60f46423",
+        "label": "becū",
+        "name_dev": "बेचू",
+        "name_roman": "becū",
+        "village_dev": "हरिपुर पाली",
+        "village_roman": "haripura pālī",
+        "source_ref": "9-66-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "730413857b55",
+        "label": "belau~ca jayakṛṣṇa",
+        "name_dev": "बेलउँच जयकृष्ण",
+        "name_roman": "belau~ca jayakṛṣṇa",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "61/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8ff268e6e412",
+        "label": "belā",
+        "name_dev": "बेला",
+        "name_roman": "belā",
+        "village_dev": "खडकाएकहरा",
+        "village_roman": "khaḍakāekaharā",
+        "source_ref": "307=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "34447a9bca58",
+        "label": "bhadreśvara",
+        "name_dev": "भद्रेश्वर",
+        "name_roman": "bhadreśvara",
+        "village_dev": "गढ़ परिसरा",
+        "village_roman": "gar̤ha parisarā",
+        "source_ref": "326-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7829027248cd",
+        "label": "bhadreśvara",
+        "name_dev": "भद्रेश्वर",
+        "name_roman": "bhadreśvara",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "414-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0497b75f6bfb",
+        "label": "bhadāī",
+        "name_dev": "भदाई",
+        "name_roman": "bhadāī",
+        "village_dev": "११०//०५ रजौरा माण्डर",
+        "village_roman": "110//05 rajaurā māṇḍara",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6e299a436b29",
+        "label": "bhagavatiyā",
+        "name_dev": "भगवतिया",
+        "name_roman": "bhagavatiyā",
+        "village_dev": "गंगोर",
+        "village_roman": "gaṃgora",
+        "source_ref": "188=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "41b590cffa38",
+        "label": "bhagīratha",
+        "name_dev": "भगीरथ",
+        "name_roman": "bhagīratha",
+        "village_dev": "रखवारी हरिअम",
+        "village_roman": "rakhavārī hariama",
+        "source_ref": "399=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8a4af785b543",
+        "label": "bhagīratha",
+        "name_dev": "भगीरथ",
+        "name_roman": "bhagīratha",
+        "village_dev": "पाँडाअँ",
+        "village_roman": "pā~ḍāa~",
+        "source_ref": "69/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c2fb78060ecd",
+        "label": "bhagīratha",
+        "name_dev": "भगीरथ",
+        "name_roman": "bhagīratha",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "83//10",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "86852a7f1617",
+        "label": "bhagīratha",
+        "name_dev": "भगीरथ",
+        "name_roman": "bhagīratha",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "96/09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "80f5942c107c",
+        "label": "bhairava datta",
+        "name_dev": "भैरव दत्त",
+        "name_roman": "bhairava datta",
+        "village_dev": "सन्दहपूर दिघो",
+        "village_roman": "sandahapūra digho",
+        "source_ref": "270=7",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "16e35bf73a84",
+        "label": "bhairavadatta",
+        "name_dev": "भैरवदत्त",
+        "name_roman": "bhairavadatta",
+        "village_dev": "शक्तिरायपुर नरउन",
+        "village_roman": "śaktirāyapura narauna",
+        "source_ref": "428=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "907d716acf7a",
+        "label": "bhaiyana",
+        "name_dev": "भैयन",
+        "name_roman": "bhaiyana",
+        "village_dev": "सरिसब",
+        "village_roman": "sarisaba",
+        "source_ref": "129/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e5f07444f418",
+        "label": "bhaiyana",
+        "name_dev": "भैयन",
+        "name_roman": "bhaiyana",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "71//03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "67d3439c7baf",
+        "label": "bhaiyana",
+        "name_dev": "भैयन",
+        "name_roman": "bhaiyana",
+        "village_dev": "डूमरा बूधवाल",
+        "village_roman": "ḍūmarā būdhavāla",
+        "source_ref": "262=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "51911e06d05c",
+        "label": "bhaiyo",
+        "name_dev": "भैयो",
+        "name_roman": "bhaiyo",
+        "village_dev": "यमुनी जजिबाल",
+        "village_roman": "yamunī jajibāla",
+        "source_ref": "17-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "98f3c559689a",
+        "label": "bhaiyā",
+        "name_dev": "भैया",
+        "name_roman": "bhaiyā",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "124/08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e33d5e565a8e",
+        "label": "bhaiyārāma",
+        "name_dev": "भैयाराम",
+        "name_roman": "bhaiyārāma",
+        "village_dev": "रोहाड़ सोदरपुर",
+        "village_roman": "rohār̤a sodarapura",
+        "source_ref": "408=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b5699de0871d",
+        "label": "bhamara",
+        "name_dev": "भमर",
+        "name_roman": "bhamara",
+        "village_dev": "संग्राम एकहरा",
+        "village_roman": "saṃgrāma ekaharā",
+        "source_ref": "24-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "705817304820",
+        "label": "bhamarū",
+        "name_dev": "भमरू",
+        "name_roman": "bhamarū",
+        "village_dev": "१२८/०४ बिठौली वलि.",
+        "village_roman": "128/04 biṭhaulī vali.",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "ebf62d65eebb",
+        "label": "bhavadatta pautra bhaṭṭa jīve",
+        "name_dev": "भवदत्त पौत्र भट्ट जीवे",
+        "name_roman": "bhavadatta pautra bhaṭṭa jīve",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9c949014cb28",
+        "label": "bhavadeva",
+        "name_dev": "भवदेव",
+        "name_roman": "bhavadeva",
+        "village_dev": "परहर सकराढ़ी",
+        "village_roman": "parahara sakarāढ़ī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a498f1095fd5",
+        "label": "bhavadeva",
+        "name_dev": "भवदेव",
+        "name_roman": "bhavadeva",
+        "village_dev": "सरिसब",
+        "village_roman": "sarisaba",
+        "source_ref": "82-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d0873de12231",
+        "label": "bhavadeva",
+        "name_dev": "भवदेव",
+        "name_roman": "bhavadeva",
+        "village_dev": "परहर सकराढी",
+        "village_roman": "parahara sakarāḍhī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c345af0f5d57",
+        "label": "bhavadeva",
+        "name_dev": "भवदेव",
+        "name_roman": "bhavadeva",
+        "village_dev": "मलिछाम नरउन",
+        "village_roman": "malichāma narauna",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "66ab1b35557a",
+        "label": "bhavadeva",
+        "name_dev": "भवदेव",
+        "name_roman": "bhavadeva",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "109//08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3f0d967c74d9",
+        "label": "bhavadeva",
+        "name_dev": "भवदेव",
+        "name_roman": "bhavadeva",
+        "village_dev": "हरिअम्ब",
+        "village_roman": "hariamba",
+        "source_ref": "82/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "cee3eae4c280",
+        "label": "bhavadeva",
+        "name_dev": "भवदेव",
+        "name_roman": "bhavadeva",
+        "village_dev": "मलियाम नरउन",
+        "village_roman": "maliyāma narauna",
+        "source_ref": "93/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5c29d3de734d",
+        "label": "bhavadeva",
+        "name_dev": "भवदेव",
+        "name_roman": "bhavadeva",
+        "village_dev": "खण्डबला",
+        "village_roman": "khaṇḍabalā",
+        "source_ref": "34=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3f0be9856726",
+        "label": "bhavanātha",
+        "name_dev": "भवनाथ",
+        "name_roman": "bhavanātha",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "83/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1349d5baf821",
+        "label": "bhaveśa",
+        "name_dev": "भवेश",
+        "name_roman": "bhaveśa",
+        "village_dev": "मलि. नरउन",
+        "village_roman": "mali. narauna",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b0fbde06012c",
+        "label": "bhaveśa",
+        "name_dev": "भवेश",
+        "name_roman": "bhaveśa",
+        "village_dev": "रजौरा माण्डर",
+        "village_roman": "rajaurā māṇḍara",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6faab451946e",
+        "label": "bhaveśa",
+        "name_dev": "भवेश",
+        "name_roman": "bhaveśa",
+        "village_dev": "वलियास",
+        "village_roman": "valiyāsa",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e4bef78d414c",
+        "label": "bhaveśa",
+        "name_dev": "भवेश",
+        "name_roman": "bhaveśa",
+        "village_dev": "ओझोलि नरउन",
+        "village_roman": "ojholi narauna",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "841263c3d954",
+        "label": "bhaveśa sutajīva karṇa",
+        "name_dev": "भवेश सुतजीव कर्ण",
+        "name_roman": "bhaveśa sutajīva karṇa",
+        "village_dev": "समौली पाली",
+        "village_roman": "samaulī pālī",
+        "source_ref": "334=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1a91953d05de",
+        "label": "bhaveśvara",
+        "name_dev": "भवेश्वर",
+        "name_roman": "bhaveśvara",
+        "village_dev": "एकहरा",
+        "village_roman": "ekaharā",
+        "source_ref": "53-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fa52cc8768b2",
+        "label": "bhavānanda",
+        "name_dev": "भवानन्द",
+        "name_roman": "bhavānanda",
+        "village_dev": "सकुरीपाली",
+        "village_roman": "sakurīpālī",
+        "source_ref": "9-07-03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9e68e1db8024",
+        "label": "bhavānī",
+        "name_dev": "भवानी",
+        "name_roman": "bhavānī",
+        "village_dev": "हरिअम",
+        "village_roman": "hariama",
+        "source_ref": "504=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0a2b8e3c2d98",
+        "label": "bhavānīnātha",
+        "name_dev": "भवानीनाथ",
+        "name_roman": "bhavānīnātha",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "121/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b67f2cfd9215",
+        "label": "bhavānīnātha",
+        "name_dev": "भवानीनाथ",
+        "name_roman": "bhavānīnātha",
+        "village_dev": "बुधवाल",
+        "village_roman": "budhavāla",
+        "source_ref": "58/04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "10fd6371d3a6",
+        "label": "bhavānīpura",
+        "name_dev": "भवानीपुर",
+        "name_roman": "bhavānīpura",
+        "village_dev": "रोहाड़ सोदरपुर",
+        "village_roman": "rohār̤a sodarapura",
+        "source_ref": "408=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7a216897d6b5",
+        "label": "bhavāī sutamanisāra karttā gopīnātha",
+        "name_dev": "भवाई सुतमनिसार कर्त्ता गोपीनाथ",
+        "name_roman": "bhavāī sutamanisāra karttā gopīnātha",
+        "village_dev": "घुसौत",
+        "village_roman": "ghusauta",
+        "source_ref": "448=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "cb53d61b824e",
+        "label": "bhaṃjana",
+        "name_dev": "भंजन",
+        "name_roman": "bhaṃjana",
+        "village_dev": "बधवास सरिसब",
+        "village_roman": "badhavāsa sarisaba",
+        "source_ref": "131=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "ff23405c3dfa",
+        "label": "bhaṭṭa",
+        "name_dev": "भट्ट",
+        "name_roman": "bhaṭṭa",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "27=",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4e0f18a83605",
+        "label": "bhaṭṭa graheśvara",
+        "name_dev": "भट्ट ग्रहेश्वर",
+        "name_roman": "bhaṭṭa graheśvara",
+        "village_dev": "मराढ़",
+        "village_roman": "marār̤ha",
+        "source_ref": "328=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2e3e96123593",
+        "label": "bhaṭṭajīve",
+        "name_dev": "भट्टजीवे",
+        "name_roman": "bhaṭṭajīve",
+        "village_dev": "दिघोय",
+        "village_roman": "dighoya",
+        "source_ref": "68/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c23c702a8966",
+        "label": "bhaṭṭācārya vāgīśvara",
+        "name_dev": "भट्टाचार्य वागीश्वर",
+        "name_roman": "bhaṭṭācārya vāgīśvara",
+        "village_dev": "सरिसब",
+        "village_roman": "sarisaba",
+        "source_ref": "270-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "97855b70eb49",
+        "label": "bhelāha-",
+        "name_dev": "भेलाह-",
+        "name_roman": "bhelāha-",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e9ac837fe7a8",
+        "label": "bhikhi",
+        "name_dev": "भिखि",
+        "name_roman": "bhikhi",
+        "village_dev": "हरिपुर पाली",
+        "village_roman": "haripura pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a5738deeab8c",
+        "label": "bhikhārī",
+        "name_dev": "भिखारी",
+        "name_roman": "bhikhārī",
+        "village_dev": "२१९/०६ महिषी पाली",
+        "village_roman": "219/06 mahiṣī pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "05ee9e257fd2",
+        "label": "bhikhārī",
+        "name_dev": "भिखारी",
+        "name_roman": "bhikhārī",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "100/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "368b83b2a590",
+        "label": "bhikhū",
+        "name_dev": "भिखू",
+        "name_roman": "bhikhū",
+        "village_dev": "मंगरौनी पाली",
+        "village_roman": "maṃgaraunī pālī",
+        "source_ref": "110/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d472cf6ee73d",
+        "label": "bhikhū",
+        "name_dev": "भिखू",
+        "name_roman": "bhikhū",
+        "village_dev": "करमहा",
+        "village_roman": "karamahā",
+        "source_ref": "111=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "decc62039eb0",
+        "label": "bhogīśvara",
+        "name_dev": "भोगीश्वर",
+        "name_roman": "bhogīśvara",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4904c80b7a11",
+        "label": "bholana",
+        "name_dev": "भोलन",
+        "name_roman": "bholana",
+        "village_dev": "१४३//०६ वहि. पबौली",
+        "village_roman": "143//06 vahi. pabaulī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2be97c410d67",
+        "label": "bholānanda",
+        "name_dev": "भोलानन्द",
+        "name_roman": "bholānanda",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "114//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "cb3c8a413650",
+        "label": "bhorā",
+        "name_dev": "भोरा",
+        "name_roman": "bhorā",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "67/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8cb3f05dd8b4",
+        "label": "bhorā",
+        "name_dev": "भोरा",
+        "name_roman": "bhorā",
+        "village_dev": "परहर सकराढ़ी",
+        "village_roman": "parahara sakarār̤hī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "db7c6004ba27",
+        "label": "bhorānātha",
+        "name_dev": "भोरानाथ",
+        "name_roman": "bhorānātha",
+        "village_dev": "करमहा",
+        "village_roman": "karamahā",
+        "source_ref": "86/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0173317cbd87",
+        "label": "bhorānātha",
+        "name_dev": "भोरानाथ",
+        "name_roman": "bhorānātha",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "502-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "851eaef09658",
+        "label": "bhā",
+        "name_dev": "भा",
+        "name_roman": "bhā",
+        "village_dev": "घोसोत",
+        "village_roman": "ghosota",
+        "source_ref": "29/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d33979a874dd",
+        "label": "bhāaiṃ",
+        "name_dev": "भाऐं",
+        "name_roman": "bhāaiṃ",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "79/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2b0e3e4320a7",
+        "label": "bhādū",
+        "name_dev": "भादू",
+        "name_roman": "bhādū",
+        "village_dev": "केउँटराम पण्डोली",
+        "village_roman": "keu~ṭarāma paṇḍolī",
+        "source_ref": "461-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "52c78df0541a",
+        "label": "bhānasī sudhākara",
+        "name_dev": "भानसी सुधाकर",
+        "name_roman": "bhānasī sudhākara",
+        "village_dev": "पुनन्दह",
+        "village_roman": "punandaha",
+        "source_ref": "234-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3cc6243a5d45",
+        "label": "bhānudatta",
+        "name_dev": "भानुदत्त",
+        "name_roman": "bhānudatta",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "83//011",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4590be26812b",
+        "label": "bhānudatta",
+        "name_dev": "भानुदत्त",
+        "name_roman": "bhānudatta",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "291-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c189301c1e64",
+        "label": "bhānukara",
+        "name_dev": "भानुकर",
+        "name_roman": "bhānukara",
+        "village_dev": "बुधवाल",
+        "village_roman": "budhavāla",
+        "source_ref": "11/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "914ffe6486bc",
+        "label": "bhānukara",
+        "name_dev": "भानुकर",
+        "name_roman": "bhānukara",
+        "village_dev": "बहेराढ़ी",
+        "village_roman": "baherār̤hī",
+        "source_ref": "57/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bea268f7be00",
+        "label": "bhār̤anī valiyāsa raghunandana",
+        "name_dev": "भाड़नी वलियास रघुनन्दन",
+        "name_roman": "bhār̤anī valiyāsa raghunandana",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "90//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7bb673152990",
+        "label": "bhāṇḍāgārika jayadatta",
+        "name_dev": "भाण्डागारिक जयदत्त",
+        "name_roman": "bhāṇḍāgārika jayadatta",
+        "village_dev": "दिघो",
+        "village_roman": "digho",
+        "source_ref": "338",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3bad5887c946",
+        "label": "bhāṣkara",
+        "name_dev": "भाष्कर",
+        "name_roman": "bhāṣkara",
+        "village_dev": "धकहरा",
+        "village_roman": "dhakaharā",
+        "source_ref": "80/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0d2354338912",
+        "label": "bhāṣā bhaveśa",
+        "name_dev": "भाषा भवेश",
+        "name_roman": "bhāṣā bhaveśa",
+        "village_dev": "करमहा",
+        "village_roman": "karamahā",
+        "source_ref": "494=",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e342420e38c4",
+        "label": "bhīma",
+        "name_dev": "भीम",
+        "name_roman": "bhīma",
+        "village_dev": "भिगुआ",
+        "village_roman": "bhiguā",
+        "source_ref": "223-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5a94d283f649",
+        "label": "bhūpati",
+        "name_dev": "भूपति",
+        "name_roman": "bhūpati",
+        "village_dev": "विजनपुर दरिहरा",
+        "village_roman": "vijanapura dariharā",
+        "source_ref": "467=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7f6ea6a4fd1e",
+        "label": "bhūpati padāṃkita someśvara",
+        "name_dev": "भूपति पदांकित सोमेश्वर",
+        "name_roman": "bhūpati padāṃkita someśvara",
+        "village_dev": "विस्फी",
+        "village_roman": "visphī",
+        "source_ref": "161=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "ed59f422dd8f",
+        "label": "bhūpālavantaḥ",
+        "name_dev": "भूपालवन्तः",
+        "name_roman": "bhūpālavantaḥ",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c918bcf2b15c",
+        "label": "bhūvana",
+        "name_dev": "भूवन",
+        "name_roman": "bhūvana",
+        "village_dev": "सकुरीपाली",
+        "village_roman": "sakurīpālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "08a5d3436703",
+        "label": "bhūvanajhā",
+        "name_dev": "भूवनझा",
+        "name_roman": "bhūvanajhā",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9b5e4c118c70",
+        "label": "bhūṣaṇa",
+        "name_dev": "भूषण",
+        "name_roman": "bhūṣaṇa",
+        "village_dev": "बलियास",
+        "village_roman": "baliyāsa",
+        "source_ref": "450-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3d8b5ec51264",
+        "label": "bhūṣaṇa",
+        "name_dev": "भूषण",
+        "name_roman": "bhūṣaṇa",
+        "village_dev": "वारी माण्डर",
+        "village_roman": "vārī māṇḍara",
+        "source_ref": "442-10",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a4ae5934da48",
+        "label": "bhūṣaṇa",
+        "name_dev": "भूषण",
+        "name_roman": "bhūṣaṇa",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "134/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "06e0d17d9ce6",
+        "label": "bihārī",
+        "name_dev": "बिहारी",
+        "name_roman": "bihārī",
+        "village_dev": "ज. म. पाली",
+        "village_roman": "ja. ma. pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "501c2f6c655d",
+        "label": "bodhakṛṣṇa",
+        "name_dev": "बोधकृष्ण",
+        "name_roman": "bodhakṛṣṇa",
+        "village_dev": "अकुसी टंकवाल",
+        "village_roman": "akusī ṭaṃkavāla",
+        "source_ref": "388-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "cc888361a128",
+        "label": "brahhamapati",
+        "name_dev": "ब्रह्हमपति",
+        "name_roman": "brahhamapati",
+        "village_dev": "डूमरा बूधवाल",
+        "village_roman": "ḍūmarā būdhavāla",
+        "source_ref": "301=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "716e0b8726ad",
+        "label": "brahmacārī lakṣmana",
+        "name_dev": "ब्रह्मचारी लक्ष्मन",
+        "name_roman": "brahmacārī lakṣmana",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "291-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "338efe8d17aa",
+        "label": "buddhikara",
+        "name_dev": "बुद्धिकर",
+        "name_roman": "buddhikara",
+        "village_dev": "घुसौत",
+        "village_roman": "ghusauta",
+        "source_ref": "56-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bbf4b6836887",
+        "label": "buddhikara",
+        "name_dev": "बुद्धिकर",
+        "name_roman": "buddhikara",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "14//05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "28220096df62",
+        "label": "buddhinātha",
+        "name_dev": "बुद्धिनाथ",
+        "name_roman": "buddhinātha",
+        "village_dev": "पनिचोभ",
+        "village_roman": "panicobha",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "74e6e8f94197",
+        "label": "bur̤hava",
+        "name_dev": "बुढ़व",
+        "name_roman": "bur̤hava",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "126=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "13fd3a20f8b4",
+        "label": "bābhana",
+        "name_dev": "बाभन",
+        "name_roman": "bābhana",
+        "village_dev": "११२//०४ महिषी पाली",
+        "village_roman": "112//04 mahiṣī pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "06ffcc7aa267",
+        "label": "bābū",
+        "name_dev": "बाबू",
+        "name_roman": "bābū",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b5a6a29f5192",
+        "label": "bābū",
+        "name_dev": "बाबू",
+        "name_roman": "bābū",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "67/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "baf459508f1c",
+        "label": "bābū pra sadānanda",
+        "name_dev": "बाबू प्र सदानन्द",
+        "name_roman": "bābū pra sadānanda",
+        "village_dev": "परमगढ़ अलय",
+        "village_roman": "paramagar̤ha alaya",
+        "source_ref": "421-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3136aeda5583",
+        "label": "bābū sadānanda",
+        "name_dev": "बाबू सदानन्द",
+        "name_roman": "bābū sadānanda",
+        "village_dev": "परमगढ़ अलय",
+        "village_roman": "paramagar̤ha alaya",
+        "source_ref": "319=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bd01b94d75ee",
+        "label": "bālaka-pītāmbara,",
+        "name_dev": "बालक-पीताम्बर,",
+        "name_roman": "bālaka-pītāmbara,",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "240b600c82f7",
+        "label": "bālakarāma",
+        "name_dev": "बालकराम",
+        "name_roman": "bālakarāma",
+        "village_dev": "महिषी बूधवाल",
+        "village_roman": "mahiṣī būdhavāla",
+        "source_ref": "238-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "682e880ec914",
+        "label": "bālakṛṣṇa",
+        "name_dev": "बालकृष्ण",
+        "name_roman": "bālakṛṣṇa",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "62//06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a540a3dfd82c",
+        "label": "bālakṛṣṇa",
+        "name_dev": "बालकृष्ण",
+        "name_roman": "bālakṛṣṇa",
+        "village_dev": "अनलपुर कामहा",
+        "village_roman": "analapura kāmahā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a95ee00d616e",
+        "label": "bālā",
+        "name_dev": "बाला",
+        "name_roman": "bālā",
+        "village_dev": "नरसाम वलियास",
+        "village_roman": "narasāma valiyāsa",
+        "source_ref": "417=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "486c7daf9fdb",
+        "label": "bāndhava",
+        "name_dev": "बान्धव",
+        "name_roman": "bāndhava",
+        "village_dev": "महिषी मालती वासी जल्लकी",
+        "village_roman": "mahiṣī mālatī vāsī jallakī",
+        "source_ref": "299-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "578b221758f4",
+        "label": "bār̤hana",
+        "name_dev": "बाढ़न",
+        "name_roman": "bār̤hana",
+        "village_dev": "महथौर अलय",
+        "village_roman": "mahathaura alaya",
+        "source_ref": "4-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f33135977d47",
+        "label": "bāsudeva",
+        "name_dev": "बासुदेव",
+        "name_roman": "bāsudeva",
+        "village_dev": "बाढ़ वासी चोठवाल सकराढ़ी",
+        "village_roman": "bār̤ha vāsī coṭhavāla sakarār̤hī",
+        "source_ref": "346=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "cdc36d31929d",
+        "label": "bāsudeva",
+        "name_dev": "बासुदेव",
+        "name_roman": "bāsudeva",
+        "village_dev": "पद्मपुर पकलिया",
+        "village_roman": "padmapura pakaliyā",
+        "source_ref": "18-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5506c43c9c84",
+        "label": "bāsudeva",
+        "name_dev": "बासुदेव",
+        "name_roman": "bāsudeva",
+        "village_dev": "नाहस खौआल",
+        "village_roman": "nāhasa khauāla",
+        "source_ref": "320=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d5f7cca6554f",
+        "label": "bāsudeva ma.ma.dehari arjūna",
+        "name_dev": "बासुदेव म.म.देहरि अर्जून",
+        "name_roman": "bāsudeva ma.ma.dehari arjūna",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "137-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "19323f03abba",
+        "label": "bāsudeva rajjeśvarā paranāmā",
+        "name_dev": "बासुदेव रज्जेश्वरा परनामा",
+        "name_roman": "bāsudeva rajjeśvarā paranāmā",
+        "village_dev": "करनैठा सकराढ़ी",
+        "village_roman": "karanaiṭhā sakarār̤hī",
+        "source_ref": "165-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e9442217a281",
+        "label": "bāuna",
+        "name_dev": "बाउन",
+        "name_roman": "bāuna",
+        "village_dev": "महिषी बूधवाल",
+        "village_roman": "mahiṣī būdhavāla",
+        "source_ref": "301=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "789c25a4913d",
+        "label": "bāṭū",
+        "name_dev": "बाटू",
+        "name_roman": "bāṭū",
+        "village_dev": "११२//०४ महिषी पाली",
+        "village_roman": "112//04 mahiṣī pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "369bafd00a5f",
+        "label": "bī jī baṃśadhara",
+        "name_dev": "बी जी बंशधर",
+        "name_roman": "bī jī baṃśadhara",
+        "village_dev": "सोनकरिआम करमहा",
+        "village_roman": "sonakariāma karamahā",
+        "source_ref": "3-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a71e02ccf87a",
+        "label": "bījī-gaṃgāditya",
+        "name_dev": "बीजी-गंगादित्य",
+        "name_roman": "bījī-gaṃgāditya",
+        "village_dev": "तेसहोता सकुराढ़ी",
+        "village_roman": "tesahotā sakurār̤hī",
+        "source_ref": "5=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b7635078209e",
+        "label": "bījī-murāri",
+        "name_dev": "बीजी-मुरारि",
+        "name_roman": "bījī-murāri",
+        "village_dev": "शक्रिराय पुर नरउन",
+        "village_roman": "śakrirāya pura narauna",
+        "source_ref": "4-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d97a632050c9",
+        "label": "cakradhara",
+        "name_dev": "चक्रधर",
+        "name_roman": "cakradhara",
+        "village_dev": "नेहरा वासी जल्लकी",
+        "village_roman": "neharā vāsī jallakī",
+        "source_ref": "161-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a9e4195811d7",
+        "label": "cakrapāṇi",
+        "name_dev": "चक्रपाणि",
+        "name_roman": "cakrapāṇi",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4e7ffc458718",
+        "label": "cakreśvara",
+        "name_dev": "चक्रेश्वर",
+        "name_roman": "cakreśvara",
+        "village_dev": "कलिगाम",
+        "village_roman": "kaligāma",
+        "source_ref": "198-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9a78ef4dfa4a",
+        "label": "cakreśvara",
+        "name_dev": "चक्रेश्वर",
+        "name_roman": "cakreśvara",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "419-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9d985c799ab0",
+        "label": "candarakta",
+        "name_dev": "चन्दरक्त",
+        "name_roman": "candarakta",
+        "village_dev": "सकराढ़ी",
+        "village_roman": "sakarār̤hī",
+        "source_ref": "110/10",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "063eb43c6d69",
+        "label": "candrakara",
+        "name_dev": "चन्द्रकर",
+        "name_roman": "candrakara",
+        "village_dev": "गंगोर",
+        "village_roman": "gaṃgora",
+        "source_ref": "323-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4ac5d4c7b728",
+        "label": "candrakara",
+        "name_dev": "चन्द्रकर",
+        "name_roman": "candrakara",
+        "village_dev": "कुई",
+        "village_roman": "kuī",
+        "source_ref": "473=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5dbff9e8b291",
+        "label": "candranātha",
+        "name_dev": "चन्द्रनाथ",
+        "name_roman": "candranātha",
+        "village_dev": "वलियास",
+        "village_roman": "valiyāsa",
+        "source_ref": "55/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "406bc63468de",
+        "label": "catura",
+        "name_dev": "चतुर",
+        "name_roman": "catura",
+        "village_dev": "नगर दिघो",
+        "village_roman": "nagara digho",
+        "source_ref": "310=8",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "162db4a7b26c",
+        "label": "caturakavi",
+        "name_dev": "चतुरकवि",
+        "name_roman": "caturakavi",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "63/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "990b9460e80f",
+        "label": "caudharī",
+        "name_dev": "चौधरी",
+        "name_roman": "caudharī",
+        "village_dev": "कुसमाल",
+        "village_roman": "kusamāla",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "80fe351aa770",
+        "label": "caudharī",
+        "name_dev": "चौधरी",
+        "name_roman": "caudharī",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "db6e1c1ad5bb",
+        "label": "caudharī",
+        "name_dev": "चौधरी",
+        "name_roman": "caudharī",
+        "village_dev": "वत्सवाल नरउन",
+        "village_roman": "vatsavāla narauna",
+        "source_ref": "213=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "df655e9a1c38",
+        "label": "caudharī",
+        "name_dev": "चौधरी",
+        "name_roman": "caudharī",
+        "village_dev": "रोहाड़ सोदरपुर",
+        "village_roman": "rohār̤a sodarapura",
+        "source_ref": "408=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1e54953915e2",
+        "label": "caudharī",
+        "name_dev": "चौधरी",
+        "name_roman": "caudharī",
+        "village_dev": "बैगनी अलय",
+        "village_roman": "baiganī alaya",
+        "source_ref": "224-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0f55098ed084",
+        "label": "caudharī",
+        "name_dev": "चौधरी",
+        "name_roman": "caudharī",
+        "village_dev": "परमगढ़ अलय",
+        "village_roman": "paramagar̤ha alaya",
+        "source_ref": "319=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "ef559ae4c32e",
+        "label": "caudharī",
+        "name_dev": "चौधरी",
+        "name_roman": "caudharī",
+        "village_dev": "काको बेलउँच",
+        "village_roman": "kāko belau~ca",
+        "source_ref": "497-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b2c60cda7e43",
+        "label": "caudharī",
+        "name_dev": "चौधरी",
+        "name_roman": "caudharī",
+        "village_dev": "गंगोली जालय",
+        "village_roman": "gaṃgolī jālaya",
+        "source_ref": "354-7",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "734af8bac7fc",
+        "label": "caṇḍeśvara",
+        "name_dev": "चण्डेश्वर",
+        "name_roman": "caṇḍeśvara",
+        "village_dev": "दोलमान पुर वासी कोवारी पनिचोभ",
+        "village_roman": "dolamāna pura vāsī kovārī panicobha",
+        "source_ref": "211-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2bfe855f436a",
+        "label": "caṇḍeśvara",
+        "name_dev": "चण्डेश्वर",
+        "name_roman": "caṇḍeśvara",
+        "village_dev": "करहिया पनिचोम",
+        "village_roman": "karahiyā panicoma",
+        "source_ref": "13-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9933e7c7ce11",
+        "label": "caṇḍeśvara",
+        "name_dev": "चण्डेश्वर",
+        "name_roman": "caṇḍeśvara",
+        "village_dev": "करहिया पनिचोभ",
+        "village_roman": "karahiyā panicobha",
+        "source_ref": "08//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "432b512f0f14",
+        "label": "cchapati",
+        "name_dev": "च्छपति",
+        "name_roman": "cchapati",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "112//07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "daaf954dc941",
+        "label": "choṭakū",
+        "name_dev": "छोटकू",
+        "name_roman": "choṭakū",
+        "village_dev": "उड़ा एकहरा",
+        "village_roman": "ur̤ā ekaharā",
+        "source_ref": "414=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9b3e11a72d6b",
+        "label": "choṭāī",
+        "name_dev": "छोटाई",
+        "name_roman": "choṭāī",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "06//03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "171d3c93e3cd",
+        "label": "choṭī",
+        "name_dev": "छोटी",
+        "name_roman": "choṭī",
+        "village_dev": "महिन्द्रपुर पण्डुआ",
+        "village_roman": "mahindrapura paṇḍuā",
+        "source_ref": "297=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "03efa663671a",
+        "label": "chāvani",
+        "name_dev": "छावनि",
+        "name_roman": "chāvani",
+        "village_dev": "रखवारी हरिअम",
+        "village_roman": "rakhavārī hariama",
+        "source_ref": "423-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "36d6ebb32507",
+        "label": "chītarījhā",
+        "name_dev": "छीतरीझा",
+        "name_roman": "chītarījhā",
+        "village_dev": "ततैल सकराढ़ी",
+        "village_roman": "tataila sakarār̤hī",
+        "source_ref": "297=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9deb845e98d5",
+        "label": "cikū",
+        "name_dev": "चिकू",
+        "name_roman": "cikū",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "71//02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "57dda9c4718f",
+        "label": "cikū",
+        "name_dev": "चिकू",
+        "name_roman": "cikū",
+        "village_dev": "जमदौली पाली",
+        "village_roman": "jamadaulī pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d193f7938e9a",
+        "label": "cikū",
+        "name_dev": "चिकू",
+        "name_roman": "cikū",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "70//03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7e3dabd35b57",
+        "label": "cintāmaṇi",
+        "name_dev": "चिन्तामणि",
+        "name_roman": "cintāmaṇi",
+        "village_dev": "कुआ तिसउँत",
+        "village_roman": "kuā tisau~ta",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "521e98cd11b5",
+        "label": "citradhara",
+        "name_dev": "चित्रधर",
+        "name_roman": "citradhara",
+        "village_dev": "अनलपुर करमहा",
+        "village_roman": "analapura karamahā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "66571bea6bee",
+        "label": "coṭāī",
+        "name_dev": "चोटाई",
+        "name_roman": "coṭāī",
+        "village_dev": "मलिछाम वहेराढ़ी",
+        "village_roman": "malichāma vaherār̤hī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d66ff55a191d",
+        "label": "cāko",
+        "name_dev": "चाको",
+        "name_roman": "cāko",
+        "village_dev": "सिन्दुरिया",
+        "village_roman": "sinduriyā",
+        "source_ref": "325-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8d7622b70631",
+        "label": "cāturddharika mahārāja samara siṃha",
+        "name_dev": "चातुर्द्धरिक महाराज समर सिंह",
+        "name_roman": "cāturddharika mahārāja samara siṃha",
+        "village_dev": "सुरगन",
+        "village_roman": "suragana",
+        "source_ref": "72/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "47dd5db8184e",
+        "label": "cāṇa",
+        "name_dev": "चाण",
+        "name_roman": "cāṇa",
+        "village_dev": "१४३//०६ वहि. पबौली",
+        "village_roman": "143//06 vahi. pabaulī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c4b6765f3b7b",
+        "label": "cāṇa",
+        "name_dev": "चाण",
+        "name_roman": "cāṇa",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "124/08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "784cb3f96122",
+        "label": "cāṇa",
+        "name_dev": "चाण",
+        "name_roman": "cāṇa",
+        "village_dev": "सरावय सकराढ़ी",
+        "village_roman": "sarāvaya sakarār̤hī",
+        "source_ref": "85=8",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "181281bbdd97",
+        "label": "cāṇa",
+        "name_dev": "चाण",
+        "name_roman": "cāṇa",
+        "village_dev": "पवौली",
+        "village_roman": "pavaulī",
+        "source_ref": "94/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4a51a0108de5",
+        "label": "cāṇa",
+        "name_dev": "चाण",
+        "name_roman": "cāṇa",
+        "village_dev": "बगड़ा",
+        "village_roman": "bagar̤ā",
+        "source_ref": "467=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7204c6b99da4",
+        "label": "cāṇa",
+        "name_dev": "चाण",
+        "name_roman": "cāṇa",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "121//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "28a0acf56639",
+        "label": "cīrā",
+        "name_dev": "चीरा",
+        "name_roman": "cīrā",
+        "village_dev": "जमुनी जजिवाल",
+        "village_roman": "jamunī jajivāla",
+        "source_ref": "76=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f577e2cde880",
+        "label": "dadhi",
+        "name_dev": "दधि",
+        "name_roman": "dadhi",
+        "village_dev": "सिंहाश्रम",
+        "village_roman": "siṃhāśrama",
+        "source_ref": "09/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "706a6b5dad3e",
+        "label": "dantīśvara esuta",
+        "name_dev": "दन्तीश्वर एसुत",
+        "name_roman": "dantīśvara esuta",
+        "village_dev": "दोर्दन्त अलय",
+        "village_roman": "dordanta alaya",
+        "source_ref": "112-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "128285735dd7",
+        "label": "darogā",
+        "name_dev": "दरोगा",
+        "name_roman": "darogā",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "115//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "daacd3e9bd87",
+        "label": "datta",
+        "name_dev": "दत्त",
+        "name_roman": "datta",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "90/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "ae3ab2e44587",
+        "label": "dau",
+        "name_dev": "दौ",
+        "name_roman": "dau",
+        "village_dev": "जजिवाल",
+        "village_roman": "jajivāla",
+        "source_ref": "341-",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a63f88a1e95a",
+        "label": "dau horila",
+        "name_dev": "दौ होरिल",
+        "name_roman": "dau horila",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "27//05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c3c6b0645b95",
+        "label": "dayārāma",
+        "name_dev": "दयाराम",
+        "name_roman": "dayārāma",
+        "village_dev": "आहिलखौआल",
+        "village_roman": "āhilakhauāla",
+        "source_ref": "324-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a0e26f841c8b",
+        "label": "daśaratha",
+        "name_dev": "दशरथ",
+        "name_roman": "daśaratha",
+        "village_dev": "उड़ा एकहरा",
+        "village_roman": "ur̤ā ekaharā",
+        "source_ref": "414=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "db7359ee6f7b",
+        "label": "daśaratha",
+        "name_dev": "दशरथ",
+        "name_roman": "daśaratha",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "121//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "76b22c821f3d",
+        "label": "daśaratha",
+        "name_dev": "दशरथ",
+        "name_roman": "daśaratha",
+        "village_dev": "भराठी सकराढ़ी",
+        "village_roman": "bharāṭhī sakarār̤hī",
+        "source_ref": "315-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b56a43631a65",
+        "label": "daśaratha",
+        "name_dev": "दशरथ",
+        "name_roman": "daśaratha",
+        "village_dev": "५७/०२ रूचौलि एकहरा",
+        "village_roman": "57/02 rūcauli ekaharā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "16b1ef4f89f6",
+        "label": "daśāvadhāna",
+        "name_dev": "दशावधान",
+        "name_roman": "daśāvadhāna",
+        "village_dev": "बहेराढ़ी",
+        "village_roman": "baherār̤hī",
+        "source_ref": "57/04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "978839bc9ba0",
+        "label": "daśāvadhāna",
+        "name_dev": "दशावधान",
+        "name_roman": "daśāvadhāna",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "350=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bdbe03c064ea",
+        "label": "daśāvadhāna narapati",
+        "name_dev": "दशावधान नरपति",
+        "name_roman": "daśāvadhāna narapati",
+        "village_dev": "गढ़ माण्डर",
+        "village_roman": "gar̤ha māṇḍara",
+        "source_ref": "502=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "03c240c121f3",
+        "label": "daṇḍī",
+        "name_dev": "दण्डी",
+        "name_roman": "daṇḍī",
+        "village_dev": "त्रिपुरौली नरउन",
+        "village_roman": "tripuraulī narauna",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e6becce0d3a0",
+        "label": "dehari",
+        "name_dev": "देहरि",
+        "name_roman": "dehari",
+        "village_dev": "सुहारी दिधोय",
+        "village_roman": "suhārī didhoya",
+        "source_ref": "312-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8db74d7c4c2d",
+        "label": "delhana",
+        "name_dev": "देल्हन",
+        "name_roman": "delhana",
+        "village_dev": "ननौती",
+        "village_roman": "nanautī",
+        "source_ref": "439-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "627c7e8749f7",
+        "label": "delhana",
+        "name_dev": "देल्हन",
+        "name_roman": "delhana",
+        "village_dev": "ब्रह्ममपुरा दिधोय",
+        "village_roman": "brahmamapurā didhoya",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "62005098e6c8",
+        "label": "deva",
+        "name_dev": "देव",
+        "name_roman": "deva",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f517bdca881c",
+        "label": "deva",
+        "name_dev": "देव",
+        "name_roman": "deva",
+        "village_dev": "दूबासकराढ़ी",
+        "village_roman": "dūbāsakarār̤hī",
+        "source_ref": "218-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7a062a4ea5a7",
+        "label": "devadatta",
+        "name_dev": "देवदत्त",
+        "name_roman": "devadatta",
+        "village_dev": "लहौला",
+        "village_roman": "lahaulā",
+        "source_ref": "244-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "863c0721ab99",
+        "label": "devadatta",
+        "name_dev": "देवदत्त",
+        "name_roman": "devadatta",
+        "village_dev": "भण्डारिसम",
+        "village_roman": "bhaṇḍārisama",
+        "source_ref": "311=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c7cc32757cc4",
+        "label": "devadatta",
+        "name_dev": "देवदत्त",
+        "name_roman": "devadatta",
+        "village_dev": "लहोला",
+        "village_roman": "laholā",
+        "source_ref": "345=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1c0b4278bc8d",
+        "label": "devadatta",
+        "name_dev": "देवदत्त",
+        "name_roman": "devadatta",
+        "village_dev": "मैलामवासी भण्डारिसम",
+        "village_roman": "mailāmavāsī bhaṇḍārisama",
+        "source_ref": "311=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b0e2e7146ae1",
+        "label": "devadhara",
+        "name_dev": "देवधर",
+        "name_roman": "devadhara",
+        "village_dev": "यमुगाम",
+        "village_roman": "yamugāma",
+        "source_ref": "54-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "286751bed3a5",
+        "label": "devadhara",
+        "name_dev": "देवधर",
+        "name_roman": "devadhara",
+        "village_dev": "फेनसउ गंगोली",
+        "village_roman": "phenasau gaṃgolī",
+        "source_ref": "394-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1fcd0e30f67d",
+        "label": "devakṛṣṇa",
+        "name_dev": "देवकृष्ण",
+        "name_roman": "devakṛṣṇa",
+        "village_dev": "गंगोरा बुधवाल",
+        "village_roman": "gaṃgorā budhavāla",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "041498361d87",
+        "label": "devanāma",
+        "name_dev": "देवनाम",
+        "name_roman": "devanāma",
+        "village_dev": "ननौर वासी जालय",
+        "village_roman": "nanaura vāsī jālaya",
+        "source_ref": "318=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "07aa014f1426",
+        "label": "devanānanda",
+        "name_dev": "देवनानन्द",
+        "name_roman": "devanānanda",
+        "village_dev": "बैगनी अलय",
+        "village_roman": "baiganī alaya",
+        "source_ref": "224-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b748cc25f671",
+        "label": "devanātha",
+        "name_dev": "देवनाथ",
+        "name_roman": "devanātha",
+        "village_dev": "करमहा",
+        "village_roman": "karamahā",
+        "source_ref": "87/09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "529bd8428721",
+        "label": "devanātha",
+        "name_dev": "देवनाथ",
+        "name_roman": "devanātha",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "83/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5545a107c231",
+        "label": "devapati",
+        "name_dev": "देवपति",
+        "name_roman": "devapati",
+        "village_dev": "बड़कौर",
+        "village_roman": "bar̤akaura",
+        "source_ref": "472-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "88ff3959ffd7",
+        "label": "devapati",
+        "name_dev": "देवपति",
+        "name_roman": "devapati",
+        "village_dev": "निचिता कुढ़ वासी अलय",
+        "village_roman": "nicitā kur̤ha vāsī alaya",
+        "source_ref": "236-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6295e34c670f",
+        "label": "devapāṇi",
+        "name_dev": "देवपाणि",
+        "name_roman": "devapāṇi",
+        "village_dev": "सोना गोआड़ी दहिभत",
+        "village_roman": "sonā goār̤ī dahibhata",
+        "source_ref": "224=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3d4df131a876",
+        "label": "devapāṇi",
+        "name_dev": "देवपाणि",
+        "name_roman": "devapāṇi",
+        "village_dev": "सोना गोआडी दहिभत",
+        "village_roman": "sonā goāḍī dahibhata",
+        "source_ref": "224=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c84b4ed53d57",
+        "label": "deve",
+        "name_dev": "देवे",
+        "name_roman": "deve",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "59/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7ce1c44f60ba",
+        "label": "devāditya",
+        "name_dev": "देवादित्य",
+        "name_roman": "devāditya",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "23//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4f39bfc06ba0",
+        "label": "devāditya jayāditya harāditya",
+        "name_dev": "देवादित्य जयादित्य हरादित्य",
+        "name_roman": "devāditya jayāditya harāditya",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "03//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3becada131cd",
+        "label": "devāgārika baṭeśvara",
+        "name_dev": "देवागारिक बटेश्वर",
+        "name_roman": "devāgārika baṭeśvara",
+        "village_dev": "दिघो",
+        "village_roman": "digho",
+        "source_ref": "345=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8ef3cb55f867",
+        "label": "devāgārika bāṭe",
+        "name_dev": "देवागारिक बाटे",
+        "name_roman": "devāgārika bāṭe",
+        "village_dev": "दिघो",
+        "village_roman": "digho",
+        "source_ref": "227=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "16866d0a5e5b",
+        "label": "devānanda",
+        "name_dev": "देवानन्द",
+        "name_roman": "devānanda",
+        "village_dev": "बलहा बलियास",
+        "village_roman": "balahā baliyāsa",
+        "source_ref": "233=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "db97025b9020",
+        "label": "devānanda",
+        "name_dev": "देवानन्द",
+        "name_roman": "devānanda",
+        "village_dev": "महिन्द्रपुर पण्डुआ",
+        "village_roman": "mahindrapura paṇḍuā",
+        "source_ref": "297=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "85f645fdbd31",
+        "label": "devāī",
+        "name_dev": "देवाई",
+        "name_roman": "devāī",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1aaec34696a1",
+        "label": "devīdāśa",
+        "name_dev": "देवीदाश",
+        "name_roman": "devīdāśa",
+        "village_dev": "बहेड़ा बेलउँच",
+        "village_roman": "baher̤ā belau~ca",
+        "source_ref": "61-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "45442334183a",
+        "label": "deyī",
+        "name_dev": "देयी",
+        "name_roman": "deyī",
+        "village_dev": "सकुरी",
+        "village_roman": "sakurī",
+        "source_ref": "27-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2cc08fbfc3ae",
+        "label": "deī",
+        "name_dev": "देई",
+        "name_roman": "deī",
+        "village_dev": "सकुरी",
+        "village_roman": "sakurī",
+        "source_ref": "27-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "92f8d5f28e07",
+        "label": "dhamadāhā",
+        "name_dev": "धमदाहा",
+        "name_roman": "dhamadāhā",
+        "village_dev": "द्योरी खण्डबला",
+        "village_roman": "dyorī khaṇḍabalā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6db9bff4946b",
+        "label": "dhananātha",
+        "name_dev": "धननाथ",
+        "name_roman": "dhananātha",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "103//03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "74dfe4f09c71",
+        "label": "dhanapati",
+        "name_dev": "धनपति",
+        "name_roman": "dhanapati",
+        "village_dev": "कड़राइनि बभनियाम",
+        "village_roman": "kar̤arāini babhaniyāma",
+        "source_ref": "348-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1921fd244f07",
+        "label": "dhanapati",
+        "name_dev": "धनपति",
+        "name_roman": "dhanapati",
+        "village_dev": "कडराइनि बभनियाम",
+        "village_roman": "kaḍarāini babhaniyāma",
+        "source_ref": "348-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "652a10537b93",
+        "label": "dhanaśyāma",
+        "name_dev": "धनश्याम",
+        "name_roman": "dhanaśyāma",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "154=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5d16b2a43008",
+        "label": "dhaneśapautra gopīnātha",
+        "name_dev": "धनेशपौत्र गोपीनाथ",
+        "name_roman": "dhaneśapautra gopīnātha",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "62//06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "95d30e8782e3",
+        "label": "dhaneśvara",
+        "name_dev": "धनेश्वर",
+        "name_roman": "dhaneśvara",
+        "village_dev": "तपोवन",
+        "village_roman": "tapovana",
+        "source_ref": "349-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c79e827401df",
+        "label": "dharanīdhara",
+        "name_dev": "धरनीधर",
+        "name_roman": "dharanīdhara",
+        "village_dev": "एकमा वलियास",
+        "village_roman": "ekamā valiyāsa",
+        "source_ref": "2-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b936454528b7",
+        "label": "dharanīdhara",
+        "name_dev": "धरनीधर",
+        "name_roman": "dharanīdhara",
+        "village_dev": "बधवास सरिसब",
+        "village_roman": "badhavāsa sarisaba",
+        "source_ref": "131=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a859b86d05c7",
+        "label": "dharmadhikaraṇika jagaddhara",
+        "name_dev": "धर्मधिकरणिक जगद्धर",
+        "name_roman": "dharmadhikaraṇika jagaddhara",
+        "village_dev": "सुरगन",
+        "village_roman": "suragana",
+        "source_ref": "126=7",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fceadbe7a3de",
+        "label": "dharmapati",
+        "name_dev": "धर्मपति",
+        "name_roman": "dharmapati",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "124//06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "be42726eef21",
+        "label": "dharmapāla",
+        "name_dev": "धर्मपाल",
+        "name_roman": "dharmapāla",
+        "village_dev": "सरिसव सोदरपुर",
+        "village_roman": "sarisava sodarapura",
+        "source_ref": "77/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2ca012817b02",
+        "label": "dharmaṅgada",
+        "name_dev": "धर्मङ्गद",
+        "name_roman": "dharmaṅgada",
+        "village_dev": "मंगरौनी पाली",
+        "village_roman": "maṃgaraunī pālī",
+        "source_ref": "110/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b894d8e1bca7",
+        "label": "dharmā horīla",
+        "name_dev": "धर्मा होरील",
+        "name_roman": "dharmā horīla",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "04/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "93fcbf9589d4",
+        "label": "dharmādhikaraṇika",
+        "name_dev": "धर्माधिकरणिक",
+        "name_roman": "dharmādhikaraṇika",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9fe6ebacda03",
+        "label": "dharmādhikaraṇika",
+        "name_dev": "धर्माधिकरणिक",
+        "name_roman": "dharmādhikaraṇika",
+        "village_dev": "दिघोय",
+        "village_roman": "dighoya",
+        "source_ref": "68/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "62f4334a33b7",
+        "label": "dharmādhikaraṇika",
+        "name_dev": "धर्माधिकरणिक",
+        "name_roman": "dharmādhikaraṇika",
+        "village_dev": "अलय",
+        "village_roman": "alaya",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7f6d19116efc",
+        "label": "dharmādhikaraṇika",
+        "name_dev": "धर्माधिकरणिक",
+        "name_roman": "dharmādhikaraṇika",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "239=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d1342810fb99",
+        "label": "dharmādhikaraṇika bhāskara",
+        "name_dev": "धर्माधिकरणिक भास्कर",
+        "name_roman": "dharmādhikaraṇika bhāskara",
+        "village_dev": "सुरगन",
+        "village_roman": "suragana",
+        "source_ref": "364-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3c8f59e95939",
+        "label": "dharmādhikaraṇika gadādhara",
+        "name_dev": "धर्माधिकरणिक गदाधर",
+        "name_roman": "dharmādhikaraṇika gadādhara",
+        "village_dev": "बाढ़अलय",
+        "village_roman": "bār̤haalaya",
+        "source_ref": "326-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "97ca604fa448",
+        "label": "dharmādhikaraṇika jānhava",
+        "name_dev": "धर्माधिकरणिक जान्हव",
+        "name_roman": "dharmādhikaraṇika jānhava",
+        "village_dev": "गंगोली",
+        "village_roman": "gaṃgolī",
+        "source_ref": "173=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f48470c1a3f3",
+        "label": "dharmādhikaraṇika maratha",
+        "name_dev": "धर्माधिकरणिक मरथ",
+        "name_roman": "dharmādhikaraṇika maratha",
+        "village_dev": "करिअम",
+        "village_roman": "kariama",
+        "source_ref": "02/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d6d7a17d368a",
+        "label": "dharmādhikaraṇika rūda",
+        "name_dev": "धर्माधिकरणिक रूद",
+        "name_roman": "dharmādhikaraṇika rūda",
+        "village_dev": "पबौली",
+        "village_roman": "pabaulī",
+        "source_ref": "96=",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1c1341284417",
+        "label": "dharmādhikarāṇika",
+        "name_dev": "धर्माधिकराणिक",
+        "name_roman": "dharmādhikarāṇika",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "54",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fae6e7fde5a2",
+        "label": "dharmādhiraṇīka mahāmaho hariśarmā",
+        "name_dev": "धर्माधिरणीक महामहो हरिशर्मा",
+        "name_roman": "dharmādhiraṇīka mahāmaho hariśarmā",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "3=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "01dd26afd686",
+        "label": "dharmādhyakṣaka bhavaśarmma",
+        "name_dev": "धर्माध्यक्षक भवशर्म्म",
+        "name_roman": "dharmādhyakṣaka bhavaśarmma",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "24-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0963200be73f",
+        "label": "dharmādhyakṣaka bhāṣkara",
+        "name_dev": "धर्माध्यक्षक भाष्कर",
+        "name_roman": "dharmādhyakṣaka bhāṣkara",
+        "village_dev": "दहिभत",
+        "village_roman": "dahibhata",
+        "source_ref": "144-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3a827bd0a826",
+        "label": "dharmādhyakṣaka deve",
+        "name_dev": "धर्माध्यक्षक देवे",
+        "name_roman": "dharmādhyakṣaka deve",
+        "village_dev": "सुइरी",
+        "village_roman": "suirī",
+        "source_ref": "263=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d1aeb668ce28",
+        "label": "dharmādhyakṣaka gar̤hāu~",
+        "name_dev": "धर्माध्यक्षक गढ़ाउँ",
+        "name_roman": "dharmādhyakṣaka gar̤hāu~",
+        "village_dev": "भरेहा",
+        "village_roman": "bharehā",
+        "source_ref": "40-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e9939a433160",
+        "label": "dharmādhyakṣaka labhaśarmma",
+        "name_dev": "धर्माध्यक्षक लभशर्म्म",
+        "name_roman": "dharmādhyakṣaka labhaśarmma",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "16/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "90235aca7896",
+        "label": "dharmādhyakṣaka lar̤āu~",
+        "name_dev": "धर्माध्यक्षक लड़ाउँ",
+        "name_roman": "dharmādhyakṣaka lar̤āu~",
+        "village_dev": "सरौनी",
+        "village_roman": "saraunī",
+        "source_ref": "24-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d40424701c08",
+        "label": "dharmādhyakṣaka narasiṃha",
+        "name_dev": "धर्माध्यक्षक नरसिंह",
+        "name_roman": "dharmādhyakṣaka narasiṃha",
+        "village_dev": "सकरहोन",
+        "village_roman": "sakarahona",
+        "source_ref": "379",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f0ea37791691",
+        "label": "dharmādhyakṣaka sarvānanda",
+        "name_dev": "धर्माध्यक्षक सर्वानन्द",
+        "name_roman": "dharmādhyakṣaka sarvānanda",
+        "village_dev": "खनौरी सकराढ़ी",
+        "village_roman": "khanaurī sakarār̤hī",
+        "source_ref": "16//09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "68776b54f837",
+        "label": "dharmādhyakṣaka sarvānanda",
+        "name_dev": "धर्माध्यक्षक सर्वानन्द",
+        "name_roman": "dharmādhyakṣaka sarvānanda",
+        "village_dev": "सकराढ़ी",
+        "village_roman": "sakarār̤hī",
+        "source_ref": "25-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "923eb5cddfb1",
+        "label": "dharmādhyakṣaka soma",
+        "name_dev": "धर्माध्यक्षक सोम",
+        "name_roman": "dharmādhyakṣaka soma",
+        "village_dev": "सम्भुआल",
+        "village_roman": "sambhuāla",
+        "source_ref": "140-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f9dcffbf6bd4",
+        "label": "dharmāghyakṣa horila —",
+        "name_dev": "धर्माघ्यक्ष होरिल —",
+        "name_roman": "dharmāghyakṣa horila —",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "5-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1cd1b7283a6c",
+        "label": "dharādhara",
+        "name_dev": "धराधर",
+        "name_roman": "dharādhara",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "58b765290b83",
+        "label": "dharādhara",
+        "name_dev": "धराधर",
+        "name_roman": "dharādhara",
+        "village_dev": "नरसाम बलियास",
+        "village_roman": "narasāma baliyāsa",
+        "source_ref": "184-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "df8d4e5cc311",
+        "label": "dharādhara",
+        "name_dev": "धराधर",
+        "name_roman": "dharādhara",
+        "village_dev": "बलियास",
+        "village_roman": "baliyāsa",
+        "source_ref": "128//02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4e7533c69b13",
+        "label": "dhauṃdhe",
+        "name_dev": "धौंधे",
+        "name_roman": "dhauṃdhe",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "103//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4bceefa1c92b",
+        "label": "dhyāneśvara",
+        "name_dev": "ध्यानेश्वर",
+        "name_roman": "dhyāneśvara",
+        "village_dev": "तपनपुर दिघोय",
+        "village_roman": "tapanapura dighoya",
+        "source_ref": "378-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "11aa86fc7efd",
+        "label": "dhānā",
+        "name_dev": "धाना",
+        "name_roman": "dhānā",
+        "village_dev": "काको बेलउँच",
+        "village_roman": "kāko belau~ca",
+        "source_ref": "499=",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "888067829e72",
+        "label": "dhāre",
+        "name_dev": "धारे",
+        "name_roman": "dhāre",
+        "village_dev": "हरड़ी सकराढ़ी",
+        "village_roman": "harar̤ī sakarār̤hī",
+        "source_ref": "403-01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "56246b74d5bc",
+        "label": "dhāreśvara",
+        "name_dev": "धारेश्वर",
+        "name_roman": "dhāreśvara",
+        "village_dev": "हरसिंहपुर निखूति",
+        "village_roman": "harasiṃhapura nikhūti",
+        "source_ref": "27=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "020b858be93a",
+        "label": "dhīra",
+        "name_dev": "धीर",
+        "name_roman": "dhīra",
+        "village_dev": "अलटौरा",
+        "village_roman": "alaṭaurā",
+        "source_ref": "409=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c17680335d3e",
+        "label": "dhīreśvara",
+        "name_dev": "धीरेश्वर",
+        "name_roman": "dhīreśvara",
+        "village_dev": "गौतम गोत्रे पण्डुआ",
+        "village_roman": "gautama gotre paṇḍuā",
+        "source_ref": "69-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d225535f514e",
+        "label": "dhīreśvara",
+        "name_dev": "धीरेश्वर",
+        "name_roman": "dhīreśvara",
+        "village_dev": "पाँडाअँ",
+        "village_roman": "pā~ḍāa~",
+        "source_ref": "69/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "76fe45aaf514",
+        "label": "dhīreśvara",
+        "name_dev": "धीरेश्वर",
+        "name_roman": "dhīreśvara",
+        "village_dev": "सुहारी दिधोय",
+        "village_roman": "suhārī didhoya",
+        "source_ref": "312-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6a17e3f34609",
+        "label": "dhīrū",
+        "name_dev": "धीरू",
+        "name_roman": "dhīrū",
+        "village_dev": "वलियास",
+        "village_roman": "valiyāsa",
+        "source_ref": "44/01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f5b3d1ccc695",
+        "label": "dhūrjjaṭī",
+        "name_dev": "धूर्ज्जटी",
+        "name_roman": "dhūrjjaṭī",
+        "village_dev": "फेनसउ गंगोली",
+        "village_roman": "phenasau gaṃgolī",
+        "source_ref": "173=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7cfc554ff349",
+        "label": "dhūrtarāja gonū pautra kānha",
+        "name_dev": "धूर्तराज गोनू पौत्र कान्ह",
+        "name_roman": "dhūrtarāja gonū pautra kānha",
+        "village_dev": "करमहा",
+        "village_roman": "karamahā",
+        "source_ref": "111=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "46ba03459ccb",
+        "label": "dikṣita",
+        "name_dev": "दिक्षित",
+        "name_roman": "dikṣita",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "5-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f5c747858a05",
+        "label": "dikṣita jhāu~ trilocana",
+        "name_dev": "दिक्षित झाउँ त्रिलोचन",
+        "name_roman": "dikṣita jhāu~ trilocana",
+        "village_dev": "हरिअम",
+        "village_roman": "hariama",
+        "source_ref": "12/010",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "84c287714da8",
+        "label": "dikṣita jhā~u~",
+        "name_dev": "दिक्षित झाँउँ",
+        "name_roman": "dikṣita jhā~u~",
+        "village_dev": "हरिअम्ब",
+        "village_roman": "hariamba",
+        "source_ref": "18=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8ec44693f0fc",
+        "label": "dinakara",
+        "name_dev": "दिनकर",
+        "name_roman": "dinakara",
+        "village_dev": "उल्लू कुजौली",
+        "village_roman": "ullū kujaulī",
+        "source_ref": "48-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d5ecd6d9f5ee",
+        "label": "dinamani",
+        "name_dev": "दिनमनि",
+        "name_roman": "dinamani",
+        "village_dev": "विस्फी तत्रैव",
+        "village_roman": "visphī tatraiva",
+        "source_ref": "339-7",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "43d9dc74a2a0",
+        "label": "ditikara śucidhara ācārya lakṣmīkara",
+        "name_dev": "दितिकर शुचिधर आचार्य लक्ष्मीकर",
+        "name_roman": "ditikara śucidhara ācārya lakṣmīkara",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "05/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bae79fa18fb2",
+        "label": "divāka",
+        "name_dev": "दिवाक",
+        "name_roman": "divāka",
+        "village_dev": "चणौर कुसमाल",
+        "village_roman": "caṇaura kusamāla",
+        "source_ref": "316-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0967fc217866",
+        "label": "divākara",
+        "name_dev": "दिवाकर",
+        "name_roman": "divākara",
+        "village_dev": "ततैल पण्डुआ",
+        "village_roman": "tataila paṇḍuā",
+        "source_ref": "02/09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e5be8edde9c8",
+        "label": "divākara",
+        "name_dev": "दिवाकर",
+        "name_roman": "divākara",
+        "village_dev": "वरुआल मराढ़",
+        "village_roman": "varuāla marāढ़",
+        "source_ref": "01//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2e3883334407",
+        "label": "divākara",
+        "name_dev": "दिवाकर",
+        "name_roman": "divākara",
+        "village_dev": "बरूआनी मड़ार",
+        "village_roman": "barūānī mar̤āra",
+        "source_ref": "2-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "70645c175791",
+        "label": "divākara",
+        "name_dev": "दिवाकर",
+        "name_roman": "divākara",
+        "village_dev": "माण्डव्य गोत्रे कोथुवा",
+        "village_roman": "māṇḍavya gotre kothuvā",
+        "source_ref": "276-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b57ef749ecbc",
+        "label": "divākara",
+        "name_dev": "दिवाकर",
+        "name_roman": "divākara",
+        "village_dev": "वरुआल मराढ",
+        "village_roman": "varuāla marāḍha",
+        "source_ref": "01//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f513ac5fd986",
+        "label": "divākara",
+        "name_dev": "दिवाकर",
+        "name_roman": "divākara",
+        "village_dev": "सुइरी",
+        "village_roman": "suirī",
+        "source_ref": "379=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e8aecb185543",
+        "label": "divāna",
+        "name_dev": "दिवान",
+        "name_roman": "divāna",
+        "village_dev": "करमहा",
+        "village_roman": "karamahā",
+        "source_ref": "86/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8c5952284ffa",
+        "label": "dukhana",
+        "name_dev": "दुखन",
+        "name_roman": "dukhana",
+        "village_dev": "तरौनी करमहा",
+        "village_roman": "taraunī karamahā",
+        "source_ref": "122/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6ca53ce25010",
+        "label": "dyutikara",
+        "name_dev": "द्युतिकर",
+        "name_roman": "dyutikara",
+        "village_dev": "गौतम गोत्रे पण्डुआ",
+        "village_roman": "gautama gotre paṇḍuā",
+        "source_ref": "69-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "072575e2e798",
+        "label": "dāmodara",
+        "name_dev": "दामोदर",
+        "name_roman": "dāmodara",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "131//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "364bc09df2bf",
+        "label": "dāmodara",
+        "name_dev": "दामोदर",
+        "name_roman": "dāmodara",
+        "village_dev": "छामू सकराढ़ी",
+        "village_roman": "chāmū sakarār̤hī",
+        "source_ref": "258=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5ca92b84966c",
+        "label": "dāmodara",
+        "name_dev": "दामोदर",
+        "name_roman": "dāmodara",
+        "village_dev": "गढ़ निखुति",
+        "village_roman": "gar̤ha nikhuti",
+        "source_ref": "10-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7aefa3b632cc",
+        "label": "dāmodara",
+        "name_dev": "दामोदर",
+        "name_roman": "dāmodara",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "414-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9ad3eaee652c",
+        "label": "dāmodara",
+        "name_dev": "दामोदर",
+        "name_roman": "dāmodara",
+        "village_dev": "गोविन्द वन पनिचोभ",
+        "village_roman": "govinda vana panicobha",
+        "source_ref": "134=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "45ebd732f613",
+        "label": "dāmodara",
+        "name_dev": "दामोदर",
+        "name_roman": "dāmodara",
+        "village_dev": "महिषी मालती वासी जल्लकी",
+        "village_roman": "mahiṣī mālatī vāsī jallakī",
+        "source_ref": "299-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6c5f6ff09a3d",
+        "label": "dāmodarapura",
+        "name_dev": "दामोदरपुर",
+        "name_roman": "dāmodarapura",
+        "village_dev": "अलय-२",
+        "village_roman": "alaya-2",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "559a74900c6e",
+        "label": "dāmū",
+        "name_dev": "दामू",
+        "name_roman": "dāmū",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "79/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0bfb791c2a0b",
+        "label": "dāmū",
+        "name_dev": "दामू",
+        "name_roman": "dāmū",
+        "village_dev": "७०//०६ कटैया माण्डर",
+        "village_roman": "70//06 kaṭaiyā māṇḍara",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e4db90cc802a",
+        "label": "dāmū",
+        "name_dev": "दामू",
+        "name_roman": "dāmū",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "79/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "83fc211774e4",
+        "label": "dāntiya",
+        "name_dev": "दान्तिय",
+        "name_roman": "dāntiya",
+        "village_dev": "कुजौली",
+        "village_roman": "kujaulī",
+        "source_ref": "04//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6c4f55498c2c",
+        "label": "dāriti",
+        "name_dev": "दारिति",
+        "name_roman": "dāriti",
+        "village_dev": "देवानन्द पञ्जी ३३९-३ जगदगुरू गंगेश सुत सुपन दौ भण्डारिसम",
+        "village_roman": "devānanda pañjī 339-3 jagadagurū gaṃgeśa suta supana dau bhaṇḍārisama",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7f58e9d44659",
+        "label": "dā~tīya",
+        "name_dev": "दाँतीय",
+        "name_roman": "dā~tīya",
+        "village_dev": "कुजोली",
+        "village_roman": "kujolī",
+        "source_ref": "5=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "29750f222823",
+        "label": "ekāntarika gopāla",
+        "name_dev": "एकान्तरिक गोपाल",
+        "name_roman": "ekāntarika gopāla",
+        "village_dev": "टकबाल",
+        "village_roman": "ṭakabāla",
+        "source_ref": "17-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8464e7f43798",
+        "label": "ekāntarika vīra",
+        "name_dev": "एकान्तरिक वीर",
+        "name_roman": "ekāntarika vīra",
+        "village_dev": "जालय",
+        "village_roman": "jālaya",
+        "source_ref": "167-7",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1be08a3e5c89",
+        "label": "ekārtika gopāla",
+        "name_dev": "एकार्तिक गोपाल",
+        "name_roman": "ekārtika gopāla",
+        "village_dev": "टकवाल",
+        "village_roman": "ṭakavāla",
+        "source_ref": "11//02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "84e78c3d2237",
+        "label": "esuta",
+        "name_dev": "एसुत",
+        "name_roman": "esuta",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2e39b44dfd89",
+        "label": "gadādhara",
+        "name_dev": "गदाधर",
+        "name_roman": "gadādhara",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "03/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e17fb6bec385",
+        "label": "gadādhara",
+        "name_dev": "गदाधर",
+        "name_roman": "gadādhara",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "109/08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "dbd49265a15c",
+        "label": "garabana",
+        "name_dev": "गरबन",
+        "name_roman": "garabana",
+        "village_dev": "काको बेलउँच",
+        "village_roman": "kāko belau~ca",
+        "source_ref": "499=",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "51da919bf73a",
+        "label": "garīva",
+        "name_dev": "गरीव",
+        "name_roman": "garīva",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "124/08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "247b80cc22f6",
+        "label": "garūr̤adhvaja raghunandana",
+        "name_dev": "गरूड़ध्वज रघुनन्दन",
+        "name_roman": "garūr̤adhvaja raghunandana",
+        "village_dev": "धोसोत",
+        "village_roman": "dhosota",
+        "source_ref": "65//5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7ed9160fc9ad",
+        "label": "garūḍadhvaja raghunandana",
+        "name_dev": "गरूडध्वज रघुनन्दन",
+        "name_roman": "garūḍadhvaja raghunandana",
+        "village_dev": "धोसोत",
+        "village_roman": "dhosota",
+        "source_ref": "65//5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c36693bb49e2",
+        "label": "gar̤hakū",
+        "name_dev": "गढ़कू",
+        "name_roman": "gar̤hakū",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "54",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "90dbd064045e",
+        "label": "gatirāma",
+        "name_dev": "गतिराम",
+        "name_roman": "gatirāma",
+        "village_dev": "पुरोही पाली",
+        "village_roman": "purohī pālī",
+        "source_ref": "417=8",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "038e45bf51be",
+        "label": "gatirāma",
+        "name_dev": "गतिराम",
+        "name_roman": "gatirāma",
+        "village_dev": "कनसम माण्डर",
+        "village_roman": "kanasama māṇḍara",
+        "source_ref": "56-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "71219cc0a510",
+        "label": "gauga raghupati",
+        "name_dev": "गौग रघुपति",
+        "name_roman": "gauga raghupati",
+        "village_dev": "हरिअम",
+        "village_roman": "hariama",
+        "source_ref": "446-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3e41fa1d409d",
+        "label": "gaurīdatta",
+        "name_dev": "गौरीदत्त",
+        "name_roman": "gaurīdatta",
+        "village_dev": "अनलपुर करमहा",
+        "village_roman": "analapura karamahā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1ca70a169089",
+        "label": "gaurīpati",
+        "name_dev": "गौरीपति",
+        "name_roman": "gaurīpati",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "126=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "528d73c74288",
+        "label": "gaurīśvara",
+        "name_dev": "गौरीश्वर",
+        "name_roman": "gaurīśvara",
+        "village_dev": "भरथूआ",
+        "village_roman": "bharathūā",
+        "source_ref": "245=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d91e133ce9f5",
+        "label": "gayana",
+        "name_dev": "गयन",
+        "name_roman": "gayana",
+        "village_dev": "गंगोली",
+        "village_roman": "gaṃgolī",
+        "source_ref": "253=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bfc38a3a89ea",
+        "label": "gayana",
+        "name_dev": "गयन",
+        "name_roman": "gayana",
+        "village_dev": "सकराढ़ी",
+        "village_roman": "sakarār̤hī",
+        "source_ref": "27-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "46769aac59cc",
+        "label": "gaṃgeśvara",
+        "name_dev": "गंगेश्वर",
+        "name_roman": "gaṃgeśvara",
+        "village_dev": "जरैलवासी कोइयार",
+        "village_roman": "jarailavāsī koiyāra",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fb8e1bde49e2",
+        "label": "gaṃgeśvara",
+        "name_dev": "गंगेश्वर",
+        "name_roman": "gaṃgeśvara",
+        "village_dev": "बुधवाल",
+        "village_roman": "budhavāla",
+        "source_ref": "11/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3c3e690c30bf",
+        "label": "gaṃgeśvara",
+        "name_dev": "गंगेश्वर",
+        "name_roman": "gaṃgeśvara",
+        "village_dev": "भरथूआ",
+        "village_roman": "bharathūā",
+        "source_ref": "245=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fa2656015be9",
+        "label": "gaṃgolī",
+        "name_dev": "गंगोली",
+        "name_roman": "gaṃgolī",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d6506ba7f106",
+        "label": "gaṃgādatta",
+        "name_dev": "गंगादत्त",
+        "name_roman": "gaṃgādatta",
+        "village_dev": "पुडेनरउन",
+        "village_roman": "puḍenarauna",
+        "source_ref": "106//05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d6cfbb1a7f61",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "१२८/०४ बिठौली वलि.",
+        "village_roman": "128/04 biṭhaulī vali.",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "497b2955d2cc",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "गंगौली",
+        "village_roman": "gaṃgaulī",
+        "source_ref": "01/03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d9548df32988",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "नवनगर घोसोत",
+        "village_roman": "navanagara ghosota",
+        "source_ref": "559-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3929823adbd0",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "वादअलय",
+        "village_roman": "vādaalaya",
+        "source_ref": "02/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9d302186e941",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "बाढ़ अलय",
+        "village_roman": "bār̤ha alaya",
+        "source_ref": "2=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fc2713b7d3f9",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "अकुसी टंकवाल",
+        "village_roman": "akusī ṭaṃkavāla",
+        "source_ref": "388-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "abf33f8cc322",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "वाढ़ अलय",
+        "village_roman": "vāढ़ alaya",
+        "source_ref": "02/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "91de4d31bf16",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "फनन्दह",
+        "village_roman": "phanandaha",
+        "source_ref": "05//02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1ad88ebc499a",
+        "label": "gaṃgādhara",
+        "name_dev": "गंगाधर",
+        "name_roman": "gaṃgādhara",
+        "village_dev": "वाढ अलय",
+        "village_roman": "vāḍha alaya",
+        "source_ref": "02/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a080ecbcc3ec",
+        "label": "gaṃgāditya",
+        "name_dev": "गंगादित्य",
+        "name_roman": "gaṃgāditya",
+        "village_dev": "तेरहोत सकराढी",
+        "village_roman": "terahota sakarāḍhī",
+        "source_ref": "04/08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fa4e015a84e4",
+        "label": "gaṃgāditya",
+        "name_dev": "गंगादित्य",
+        "name_roman": "gaṃgāditya",
+        "village_dev": "तेरहोत सकराढ़ी",
+        "village_roman": "terahota sakarāढ़ī",
+        "source_ref": "04/08",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "31c5cb0a7eea",
+        "label": "gaṃgādāśa",
+        "name_dev": "गंगादाश",
+        "name_roman": "gaṃgādāśa",
+        "village_dev": "कुजौली",
+        "village_roman": "kujaulī",
+        "source_ref": "123-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7fe6bef1488b",
+        "label": "gaṇa",
+        "name_dev": "गण",
+        "name_roman": "gaṇa",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4f9b05937fe8",
+        "label": "gaṇapati",
+        "name_dev": "गणपति",
+        "name_roman": "gaṇapati",
+        "village_dev": "नर वलि.",
+        "village_roman": "nara vali.",
+        "source_ref": "202=8",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0a2730a3b558",
+        "label": "gaṇapati",
+        "name_dev": "गणपति",
+        "name_roman": "gaṇapati",
+        "village_dev": "जालय",
+        "village_roman": "jālaya",
+        "source_ref": "19-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b4f1ddf9346c",
+        "label": "gaṇapati",
+        "name_dev": "गणपति",
+        "name_roman": "gaṇapati",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "66//04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "419bf40427c5",
+        "label": "gaṇapati-gaurī",
+        "name_dev": "गणपति-गौरी",
+        "name_roman": "gaṇapati-gaurī",
+        "village_dev": "डीह भण्डारिसम",
+        "village_roman": "ḍīha bhaṇḍārisama",
+        "source_ref": "375-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8ac7e7ad73c4",
+        "label": "ghamaṃḍī",
+        "name_dev": "घमंडी",
+        "name_roman": "ghamaṃḍī",
+        "village_dev": "गंगोली जालय",
+        "village_roman": "gaṃgolī jālaya",
+        "source_ref": "354-7",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "87bd5559c505",
+        "label": "ghanaśyāma",
+        "name_dev": "घनश्याम",
+        "name_roman": "ghanaśyāma",
+        "village_dev": "ओझोलि नरउन",
+        "village_roman": "ojholi narauna",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "99ad6b61c218",
+        "label": "ghanaśyāma",
+        "name_dev": "घनश्याम",
+        "name_roman": "ghanaśyāma",
+        "village_dev": "डुमरा बुधवला",
+        "village_roman": "ḍumarā budhavalā",
+        "source_ref": "85//06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "972706777d8a",
+        "label": "ghanaśyāma",
+        "name_dev": "घनश्याम",
+        "name_roman": "ghanaśyāma",
+        "village_dev": "सरिसव सोदरपुर",
+        "village_roman": "sarisava sodarapura",
+        "source_ref": "77//06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "87e55554aff0",
+        "label": "ghanaśyāma",
+        "name_dev": "घनश्याम",
+        "name_roman": "ghanaśyāma",
+        "village_dev": "खडकाएकहरा",
+        "village_roman": "khaḍakāekaharā",
+        "source_ref": "307=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "31fe9de48f52",
+        "label": "ghanaśyāma",
+        "name_dev": "घनश्याम",
+        "name_roman": "ghanaśyāma",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "83//09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "fc7f0caeeef2",
+        "label": "ghanaśyāma",
+        "name_dev": "घनश्याम",
+        "name_roman": "ghanaśyāma",
+        "village_dev": "नर वलि.",
+        "village_roman": "nara vali.",
+        "source_ref": "202=8",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "16f97a0f5dd5",
+        "label": "ghanaśyāma",
+        "name_dev": "घनश्याम",
+        "name_roman": "ghanaśyāma",
+        "village_dev": "तरौनी करमहा",
+        "village_roman": "taraunī karamahā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7f755ad4451b",
+        "label": "ghanaśyāma",
+        "name_dev": "घनश्याम",
+        "name_roman": "ghanaśyāma",
+        "village_dev": "नरसाम वलियास",
+        "village_roman": "narasāma valiyāsa",
+        "source_ref": "303=9",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "472fa207e3a2",
+        "label": "ghanānanda",
+        "name_dev": "घनानन्द",
+        "name_roman": "ghanānanda",
+        "village_dev": "डूमरा बूधवाल",
+        "village_roman": "ḍūmarā būdhavāla",
+        "source_ref": "301=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3672a48bf721",
+        "label": "ghaughe",
+        "name_dev": "घौघे",
+        "name_roman": "ghaughe",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "185-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "115d0154255f",
+        "label": "ghāsīrāma",
+        "name_dev": "घासीराम",
+        "name_roman": "ghāsīrāma",
+        "village_dev": "कुसमाल",
+        "village_roman": "kusamāla",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "94e7f336791c",
+        "label": "ghṛtikara",
+        "name_dev": "घृतिकर",
+        "name_roman": "ghṛtikara",
+        "village_dev": "थरिया",
+        "village_roman": "thariyā",
+        "source_ref": "486-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "99b3962f2f0b",
+        "label": "giramiṭiyā",
+        "name_dev": "गिरमिटिया",
+        "name_roman": "giramiṭiyā",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "137/10",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1475c27ca31d",
+        "label": "girīśa",
+        "name_dev": "गिरीश",
+        "name_roman": "girīśa",
+        "village_dev": "रजौरा माण्डर",
+        "village_roman": "rajaurā māṇḍara",
+        "source_ref": "9-04=01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "854db5085aa0",
+        "label": "girīśvara",
+        "name_dev": "गिरीश्वर",
+        "name_roman": "girīśvara",
+        "village_dev": "गुलदी खण्डबला",
+        "village_roman": "guladī khaṇḍabalā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1f4c4aab2079",
+        "label": "godāha bāsudeva",
+        "name_dev": "गोदाह बासुदेव",
+        "name_roman": "godāha bāsudeva",
+        "village_dev": "वलियास",
+        "village_roman": "valiyāsa",
+        "source_ref": "483",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1fcc116b26e0",
+        "label": "goi",
+        "name_dev": "गोइ",
+        "name_roman": "goi",
+        "village_dev": "सुखैत सोदरपुर",
+        "village_roman": "sukhaita sodarapura",
+        "source_ref": "403=7",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1714c8d6a6a0",
+        "label": "gokhūla candrakara",
+        "name_dev": "गोखूल चन्द्रकर",
+        "name_roman": "gokhūla candrakara",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "124/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "00af3223638a",
+        "label": "gokula",
+        "name_dev": "गोकुल",
+        "name_roman": "gokula",
+        "village_dev": "खडकाएकहरा",
+        "village_roman": "khaḍakāekaharā",
+        "source_ref": "307=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a36670cb4239",
+        "label": "gonū",
+        "name_dev": "गोनू",
+        "name_roman": "gonū",
+        "village_dev": "हारी पाली",
+        "village_roman": "hārī pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5b2c4573579a",
+        "label": "gonū",
+        "name_dev": "गोनू",
+        "name_roman": "gonū",
+        "village_dev": "सिहौली माण्डर",
+        "village_roman": "sihaulī māṇḍara",
+        "source_ref": "199-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "92b0bd8c43fc",
+        "label": "gonū",
+        "name_dev": "गोनू",
+        "name_roman": "gonū",
+        "village_dev": "कटका सोदरपुर",
+        "village_roman": "kaṭakā sodarapura",
+        "source_ref": "95=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d66715f6cfc7",
+        "label": "gonū hemāṅgada",
+        "name_dev": "गोनू हेमाङ्गद",
+        "name_roman": "gonū hemāṅgada",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "35574492e49e",
+        "label": "gopāla",
+        "name_dev": "गोपाल",
+        "name_roman": "gopāla",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "83/07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "72908f3b15a8",
+        "label": "gopāla",
+        "name_dev": "गोपाल",
+        "name_roman": "gopāla",
+        "village_dev": "पण्डुआ",
+        "village_roman": "paṇḍuā",
+        "source_ref": "71//02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "18854b0f940b",
+        "label": "gopāla",
+        "name_dev": "गोपाल",
+        "name_roman": "gopāla",
+        "village_dev": "भौर खण्डबला",
+        "village_roman": "bhaura khaṇḍabalā",
+        "source_ref": "93/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3ad9722d1b85",
+        "label": "gopīnātha",
+        "name_dev": "गोपीनाथ",
+        "name_roman": "gopīnātha",
+        "village_dev": "डुमरा बुधवला",
+        "village_roman": "ḍumarā budhavalā",
+        "source_ref": "85//06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2434c18d43f5",
+        "label": "gopīnātha raghunātha",
+        "name_dev": "गोपीनाथ रघुनाथ",
+        "name_roman": "gopīnātha raghunātha",
+        "village_dev": "कुजौली",
+        "village_roman": "kujaulī",
+        "source_ref": "55//03",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "16acc3bc9c9e",
+        "label": "gotre",
+        "name_dev": "गोत्रे",
+        "name_roman": "gotre",
+        "village_dev": "वेला",
+        "village_roman": "velā",
+        "source_ref": "276-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4943f42c889a",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "कोइयार",
+        "village_roman": "koiyāra",
+        "source_ref": "314-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5a17c0460448",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "पण्डुआ",
+        "village_roman": "paṇḍuā",
+        "source_ref": "29/04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d96f56368b07",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1c4fa13a71a2",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "सकुरी वलिया",
+        "village_roman": "sakurī valiyā",
+        "source_ref": "414=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a03361c05d38",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "71//02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "af8b7b30b117",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "भन्दवाल",
+        "village_roman": "bhandavāla",
+        "source_ref": "147=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c77ac5815325",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "414-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3d7d2f2c031b",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "बलहा बलियास",
+        "village_roman": "balahā baliyāsa",
+        "source_ref": "233=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c300ad81d17d",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "वभनियाम",
+        "village_roman": "vabhaniyāma",
+        "source_ref": "75/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "ffb5f6f84a1f",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "सकराढ़ी",
+        "village_roman": "sakarār̤hī",
+        "source_ref": "03//02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d31381a34685",
+        "label": "govinda",
+        "name_dev": "गोविन्द",
+        "name_roman": "govinda",
+        "village_dev": "घोसोत",
+        "village_roman": "ghosota",
+        "source_ref": "29/05",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "194c83922d24",
+        "label": "gośā~i",
+        "name_dev": "गोशाँइ",
+        "name_roman": "gośā~i",
+        "village_dev": "नगराम काको बेलउँच",
+        "village_roman": "nagarāma kāko belau~ca",
+        "source_ref": "493-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "ba0bfb1029c8",
+        "label": "gośā~i lakhāī",
+        "name_dev": "गोशाँइ लखाई",
+        "name_roman": "gośā~i lakhāī",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "338",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "42145b6931a0",
+        "label": "gośā~i viśvevara",
+        "name_dev": "गोशाँइ विश्वेवर",
+        "name_roman": "gośā~i viśvevara",
+        "village_dev": "पाली",
+        "village_roman": "pālī",
+        "source_ref": "111//02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a50da002f9fc",
+        "label": "gośāīṃ baladeva",
+        "name_dev": "गोशाईं बलदेव",
+        "name_roman": "gośāīṃ baladeva",
+        "village_dev": "फनन्दह",
+        "village_roman": "phanandaha",
+        "source_ref": "42//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7bb694e0bd40",
+        "label": "gośāṃi",
+        "name_dev": "गोशांइ",
+        "name_roman": "gośāṃi",
+        "village_dev": "फनन्दह",
+        "village_roman": "phanandaha",
+        "source_ref": "42//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b05c1c972219",
+        "label": "goḍhama",
+        "name_dev": "गोढम",
+        "name_roman": "goḍhama",
+        "village_dev": "आहिलखौआल",
+        "village_roman": "āhilakhauāla",
+        "source_ref": "324-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3225b884c8f4",
+        "label": "goḍhi़",
+        "name_dev": "गोढि़",
+        "name_roman": "goḍhi़",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "27=",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f10ee6e85a1b",
+        "label": "goṃdi",
+        "name_dev": "गोंदि",
+        "name_roman": "goṃdi",
+        "village_dev": "फनन्दह",
+        "village_roman": "phanandaha",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "eb0506a40fb2",
+        "label": "goṣṭhāra jāgū",
+        "name_dev": "गोष्ठार जागू",
+        "name_roman": "goṣṭhāra jāgū",
+        "village_dev": "ब्रह्मपुरा",
+        "village_roman": "brahmapurā",
+        "source_ref": "220=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "1c091579f6ac",
+        "label": "graheśvara",
+        "name_dev": "ग्रहेश्वर",
+        "name_roman": "graheśvara",
+        "village_dev": "अलय",
+        "village_roman": "alaya",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "116d415670a1",
+        "label": "graheśvara lakṣmīdhara gaṃgādhara",
+        "name_dev": "ग्रहेश्वर लक्ष्मीधर गंगाधर",
+        "name_roman": "graheśvara lakṣmīdhara gaṃgādhara",
+        "village_dev": "अलय",
+        "village_roman": "alaya",
+        "source_ref": "02//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2926c4fc0391",
+        "label": "granthakāraka dhanañjaya",
+        "name_dev": "ग्रन्थकारक धनञ्जय",
+        "name_roman": "granthakāraka dhanañjaya",
+        "village_dev": "नदाम",
+        "village_roman": "nadāma",
+        "source_ref": "145-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9d8855b9145a",
+        "label": "grāma",
+        "name_dev": "ग्राम",
+        "name_roman": "grāma",
+        "village_dev": "देवानन्द पञ्जी ३३९-३ जगदगुरू गंगेश सुत सुपन दौ भण्डारिसम",
+        "village_roman": "devānanda pañjī 339-3 jagadagurū gaṃgeśa suta supana dau bhaṇḍārisama",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4559f108e517",
+        "label": "grāma",
+        "name_dev": "ग्राम",
+        "name_roman": "grāma",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "591071a8be70",
+        "label": "guṇapati",
+        "name_dev": "गुणपति",
+        "name_roman": "guṇapati",
+        "village_dev": "नवहथ गंगोली",
+        "village_roman": "navahatha gaṃgolī",
+        "source_ref": "205=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4d744132bb80",
+        "label": "guṇapati śivapati indrapati",
+        "name_dev": "गुणपति शिवपति इन्द्रपति",
+        "name_roman": "guṇapati śivapati indrapati",
+        "village_dev": "माण्डर",
+        "village_roman": "māṇḍara",
+        "source_ref": "18/09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f9271871505d",
+        "label": "guṇe",
+        "name_dev": "गुणे",
+        "name_roman": "guṇe",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "62//07",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "13bc7717b7ad",
+        "label": "guṇe",
+        "name_dev": "गुणे",
+        "name_roman": "guṇe",
+        "village_dev": "दिघो",
+        "village_roman": "digho",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bc64e6c09d2c",
+        "label": "guṇākara",
+        "name_dev": "गुणाकर",
+        "name_roman": "guṇākara",
+        "village_dev": "खौआल",
+        "village_roman": "khauāla",
+        "source_ref": "75/04",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "24ee4d1f3ccf",
+        "label": "guṇānanda",
+        "name_dev": "गुणानन्द",
+        "name_roman": "guṇānanda",
+        "village_dev": "जमदौली पाली",
+        "village_roman": "jamadaulī pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3213a2cc091e",
+        "label": "guṇī",
+        "name_dev": "गुणी",
+        "name_roman": "guṇī",
+        "village_dev": "भखरौली सकराढ़ी",
+        "village_roman": "bhakharaulī sakarār̤hī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5b1711c1a852",
+        "label": "guṇīśvara",
+        "name_dev": "गुणीश्वर",
+        "name_roman": "guṇīśvara",
+        "village_dev": "रू. एकहरा",
+        "village_roman": "rū. ekaharā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2a227278d6a9",
+        "label": "guṇīśvara",
+        "name_dev": "गुणीश्वर",
+        "name_roman": "guṇīśvara",
+        "village_dev": "गोविन्द वन",
+        "village_roman": "govinda vana",
+        "source_ref": "19-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a67257350476",
+        "label": "gādū",
+        "name_dev": "गादू",
+        "name_roman": "gādū",
+        "village_dev": "भखरौली सकराढ़ी",
+        "village_roman": "bhakharaulī sakarār̤hī",
+        "source_ref": "168=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9d11189519b3",
+        "label": "gārika",
+        "name_dev": "गारिक",
+        "name_roman": "gārika",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "69b9ae5ba242",
+        "label": "gārīda",
+        "name_dev": "गारीद",
+        "name_roman": "gārīda",
+        "village_dev": "पबोली",
+        "village_roman": "pabolī",
+        "source_ref": "114/09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "52e6232f75c8",
+        "label": "gāṃgu",
+        "name_dev": "गांगु",
+        "name_roman": "gāṃgu",
+        "village_dev": "लहुण्डा",
+        "village_roman": "lahuṇḍā",
+        "source_ref": "7-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "25cf8e7ca4a7",
+        "label": "gāṃgu",
+        "name_dev": "गांगु",
+        "name_roman": "gāṃgu",
+        "village_dev": "घुतहरा",
+        "village_roman": "ghutaharā",
+        "source_ref": "4-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b3be32e90ebb",
+        "label": "hacalū",
+        "name_dev": "हचलू",
+        "name_roman": "hacalū",
+        "village_dev": "अलय",
+        "village_roman": "alaya",
+        "source_ref": "131//01",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e6938b378fa1",
+        "label": "haladhara",
+        "name_dev": "हलधर",
+        "name_roman": "haladhara",
+        "village_dev": "गुलदी खण्डबला",
+        "village_roman": "guladī khaṇḍabalā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "beb9a0bfbcdd",
+        "label": "haladhara",
+        "name_dev": "हलधर",
+        "name_roman": "haladhara",
+        "village_dev": "घुसौत",
+        "village_roman": "ghusauta",
+        "source_ref": "56-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4a9b64ebe72e",
+        "label": "haladhara",
+        "name_dev": "हलधर",
+        "name_roman": "haladhara",
+        "village_dev": "अलय",
+        "village_roman": "alaya",
+        "source_ref": "97-3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "99a7befe4347",
+        "label": "halleśvara",
+        "name_dev": "हल्लेश्वर",
+        "name_roman": "halleśvara",
+        "village_dev": "हिराउत सुरगन",
+        "village_roman": "hirāuta suragana",
+        "source_ref": "48=2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0b00aa2af3ff",
+        "label": "halleśvara",
+        "name_dev": "हल्लेश्वर",
+        "name_roman": "halleśvara",
+        "village_dev": "सकरहोन",
+        "village_roman": "sakarahona",
+        "source_ref": "379-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9f91b0b1b1b8",
+        "label": "halleśvara",
+        "name_dev": "हल्लेश्वर",
+        "name_roman": "halleśvara",
+        "village_dev": "जजुआल",
+        "village_roman": "jajuāla",
+        "source_ref": "374=7",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0786a9198882",
+        "label": "halleśvara",
+        "name_dev": "हल्लेश्वर",
+        "name_roman": "halleśvara",
+        "village_dev": "नाधावासी सुरगन",
+        "village_roman": "nādhāvāsī suragana",
+        "source_ref": "472=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "d79de115c598",
+        "label": "halāyudha",
+        "name_dev": "हलायुध",
+        "name_roman": "halāyudha",
+        "village_dev": "सिंहाश्रम",
+        "village_roman": "siṃhāśrama",
+        "source_ref": "23-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "2eeaab279947",
+        "label": "halāyudha",
+        "name_dev": "हलायुध",
+        "name_roman": "halāyudha",
+        "village_dev": "खांगुड़ वासी परिसरा",
+        "village_roman": "khāṃgur̤a vāsī parisarā",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a2a911848387",
+        "label": "halāyuta",
+        "name_dev": "हलायुत",
+        "name_roman": "halāyuta",
+        "village_dev": "गढ़ परिसरा",
+        "village_roman": "gar̤ha parisarā",
+        "source_ref": "326-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "bffef88aaaae",
+        "label": "haradatta",
+        "name_dev": "हरदत्त",
+        "name_roman": "haradatta",
+        "village_dev": "करूआनी सकराढ़ी",
+        "village_roman": "karūānī sakarār̤hī",
+        "source_ref": "4-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c86b39ccbe55",
+        "label": "haradatta",
+        "name_dev": "हरदत्त",
+        "name_roman": "haradatta",
+        "village_dev": "पचही जजिवाल",
+        "village_roman": "pacahī jajivāla",
+        "source_ref": "146=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "127def20502f",
+        "label": "haradatta",
+        "name_dev": "हरदत्त",
+        "name_roman": "haradatta",
+        "village_dev": "यमुगाम",
+        "village_roman": "yamugāma",
+        "source_ref": "43-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f7538f65d5fb",
+        "label": "haradatta",
+        "name_dev": "हरदत्त",
+        "name_roman": "haradatta",
+        "village_dev": "भराठी सकराढ़ी",
+        "village_roman": "bharāṭhī sakarār̤hī",
+        "source_ref": "315-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8c9c65771b1d",
+        "label": "haradatta",
+        "name_dev": "हरदत्त",
+        "name_roman": "haradatta",
+        "village_dev": "बरहैता वासी गौतम गोत्रे खण्डबला",
+        "village_roman": "barahaitā vāsī gautama gotre khaṇḍabalā",
+        "source_ref": "564=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "148ae38b005c",
+        "label": "haradatta",
+        "name_dev": "हरदत्त",
+        "name_roman": "haradatta",
+        "village_dev": "करुआरि सकराढ़ी",
+        "village_roman": "karuāri sakarāढ़ī",
+        "source_ref": "03/09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "461c69e4b11d",
+        "label": "haradatta",
+        "name_dev": "हरदत्त",
+        "name_roman": "haradatta",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "04e45b61447e",
+        "label": "haradatta",
+        "name_dev": "हरदत्त",
+        "name_roman": "haradatta",
+        "village_dev": "करुआरि सकराढी",
+        "village_roman": "karuāri sakarāḍhī",
+        "source_ref": "03/09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "edefffb46072",
+        "label": "harakhū",
+        "name_dev": "हरखू",
+        "name_roman": "harakhū",
+        "village_dev": "९१//०३ रैयाम सोदरपुर",
+        "village_roman": "91//03 raiyāma sodarapura",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "e092972e3b10",
+        "label": "harapati",
+        "name_dev": "हरपति",
+        "name_roman": "harapati",
+        "village_dev": "१५९/०२ माड़रि बलियास",
+        "village_roman": "159/02 mār̤ari baliyāsa",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "3de3116c9dd0",
+        "label": "harapati",
+        "name_dev": "हरपति",
+        "name_roman": "harapati",
+        "village_dev": "करमहा",
+        "village_roman": "karamahā",
+        "source_ref": "130/06",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "74b5d9f8fb78",
+        "label": "harapati",
+        "name_dev": "हरपति",
+        "name_roman": "harapati",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "67/02",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "cd915af3ed37",
+        "label": "hari",
+        "name_dev": "हरि",
+        "name_roman": "hari",
+        "village_dev": "सल्हवी नरउन",
+        "village_roman": "salhavī narauna",
+        "source_ref": "85/11",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "b82c375f735c",
+        "label": "hari",
+        "name_dev": "हरि",
+        "name_roman": "hari",
+        "village_dev": "सुइरी",
+        "village_roman": "suirī",
+        "source_ref": "162=3",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c358510cb9e4",
+        "label": "hari",
+        "name_dev": "हरि",
+        "name_roman": "hari",
+        "village_dev": "सतौली सतलखा",
+        "village_roman": "sataulī satalakhā",
+        "source_ref": "171=5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "a259d74977cd",
+        "label": "hari",
+        "name_dev": "हरि",
+        "name_roman": "hari",
+        "village_dev": "बुधवाल",
+        "village_roman": "budhavāla",
+        "source_ref": "61-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "f9ef6587d40a",
+        "label": "harideva",
+        "name_dev": "हरिदेव",
+        "name_roman": "harideva",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "14//09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "271e59ff8181",
+        "label": "harigaṃga",
+        "name_dev": "हरिगंग",
+        "name_roman": "harigaṃga",
+        "village_dev": "महतराम वासी सुरौर",
+        "village_roman": "mahatarāma vāsī suraura",
+        "source_ref": "353=6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "4971a3759e87",
+        "label": "harihara",
+        "name_dev": "हरिहर",
+        "name_roman": "harihara",
+        "village_dev": "दरिहरा",
+        "village_roman": "dariharā",
+        "source_ref": "22-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0adaced960f1",
+        "label": "harihara",
+        "name_dev": "हरिहर",
+        "name_roman": "harihara",
+        "village_dev": "",
+        "village_roman": "",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "be478835d79d",
+        "label": "harihara",
+        "name_dev": "हरिहर",
+        "name_roman": "harihara",
+        "village_dev": "जमदौली पाली",
+        "village_roman": "jamadaulī pālī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c46f24b1e081",
+        "label": "harihara",
+        "name_dev": "हरिहर",
+        "name_roman": "harihara",
+        "village_dev": "हरडी सकराढ़ी",
+        "village_roman": "haraḍī sakarār̤hī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "827d8ed9f5fd",
+        "label": "harihara",
+        "name_dev": "हरिहर",
+        "name_roman": "harihara",
+        "village_dev": "गौतम गोत्रे पण्डुआ",
+        "village_roman": "gautama gotre paṇḍuā",
+        "source_ref": "343=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "0845a3b8a8ec",
+        "label": "harihara",
+        "name_dev": "हरिहर",
+        "name_roman": "harihara",
+        "village_dev": "यमुनी जजिबाल",
+        "village_roman": "yamunī jajibāla",
+        "source_ref": "17-6",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "696b193ac3eb",
+        "label": "harihara",
+        "name_dev": "हरिहर",
+        "name_roman": "harihara",
+        "village_dev": "सकराढ़ी",
+        "village_roman": "sakarār̤hī",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "c096a7e118be",
+        "label": "harijīva",
+        "name_dev": "हरिजीव",
+        "name_roman": "harijīva",
+        "village_dev": "सरिसव",
+        "village_roman": "sarisava",
+        "source_ref": "103//09",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8ecf091b92b4",
+        "label": "harijīva",
+        "name_dev": "हरिजीव",
+        "name_roman": "harijīva",
+        "village_dev": "दिगौन्ध सौदरपुर",
+        "village_roman": "digaundha saudarapura",
+        "source_ref": "302-5",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7108e834419f",
+        "label": "harikara",
+        "name_dev": "हरिकर",
+        "name_roman": "harikara",
+        "village_dev": "नदाम",
+        "village_roman": "nadāma",
+        "source_ref": "17=4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "63eb07d30be9",
+        "label": "harikara",
+        "name_dev": "हरिकर",
+        "name_roman": "harikara",
+        "village_dev": "बलहा",
+        "village_roman": "balahā",
+        "source_ref": "325=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "9b1c4efb6a92",
+        "label": "harikara",
+        "name_dev": "हरिकर",
+        "name_roman": "harikara",
+        "village_dev": "पिपरौन",
+        "village_roman": "piparauna",
+        "source_ref": "461-4",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "af9966ff84a5",
+        "label": "harikaṃṭha",
+        "name_dev": "हरिकंठ",
+        "name_roman": "harikaṃṭha",
+        "village_dev": "टकबाल",
+        "village_roman": "ṭakabāla",
+        "source_ref": "14-1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "5d96a7bc0851",
+        "label": "harikeśa",
+        "name_dev": "हरिकेश",
+        "name_roman": "harikeśa",
+        "village_dev": "नगराम ततैल सकराढ़ी",
+        "village_roman": "nagarāma tataila sakarār̤hī",
+        "source_ref": "376=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "6f1d149fa944",
+        "label": "harikeśa",
+        "name_dev": "हरिकेश",
+        "name_roman": "harikeśa",
+        "village_dev": "सुरगन",
+        "village_roman": "suragana",
+        "source_ref": "16-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "15854dee8368",
+        "label": "harikeśa",
+        "name_dev": "हरिकेश",
+        "name_roman": "harikeśa",
+        "village_dev": "गौतम गौत्र बूधैरा",
+        "village_roman": "gautama gautra būdhairā",
+        "source_ref": "322-2",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "150ae2da444e",
+        "label": "harikeśa",
+        "name_dev": "हरिकेश",
+        "name_roman": "harikeśa",
+        "village_dev": "ततैल पण्डुआ",
+        "village_roman": "tataila paṇḍuā",
+        "source_ref": "504=1",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "7ff920413e46",
+        "label": "harikhū",
+        "name_dev": "हरिखू",
+        "name_roman": "harikhū",
+        "village_dev": "सोदरपुर",
+        "village_roman": "sodarapura",
+        "source_ref": "",
+        "type": "Person"
+      }
+    },
+    {
+      "data": {
+        "id": "8f08a7e1ad84",
+        "label": "harinagara",
+        "name_dev": "हरिनगर",
+        "name_roman": "harinagara",
+        "village_dev": "पुरोही पाली",
+        "village_roman": "purohī pālī",
+        "source_ref": "417=8",
+        "type": "Person"
+      }
+    }
+  ]
+}
