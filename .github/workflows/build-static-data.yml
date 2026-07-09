@@ -1,0 +1,132 @@
+name: Build static GitHub Pages data
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data/**"
+      - ".github/workflows/build-static-data.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-static-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate docs/data JSON files
+        run: |
+          python - <<'PY'
+          import csv
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          root = Path(".")
+          data_dir = root / "data"
+          docs_data_dir = root / "docs" / "data"
+          docs_data_dir.mkdir(parents=True, exist_ok=True)
+
+          persons_csv = data_dir / "persons.csv"
+          persons_json = docs_data_dir / "persons.json"
+          graph_json = docs_data_dir / "graph_sample.json"
+
+          if not persons_csv.exists():
+              raise SystemExit("Missing data/persons.csv")
+
+          text = persons_csv.read_text(encoding="utf-8-sig")
+
+          # Some exported CSV files may have records separated by whitespace instead of clean newlines.
+          # This normalization inserts a newline before records that start with a 12-character hex id.
+          text = re.sub(r'"\s+"(?=[0-9a-fA-F]{12}",)', '"\n"', text)
+
+          # Also make sure the header is separated from the first record.
+          text = re.sub(
+              r'("source_file")\s+"(?=[0-9a-fA-F]{12}",)',
+              r'\1\n"',
+              text,
+              count=1
+          )
+
+          rows = list(csv.DictReader(text.splitlines()))
+
+          persons = []
+          for row in rows:
+              person_id = (row.get("id") or "").strip()
+              if not person_id:
+                  continue
+
+              name_dev = (row.get("name_dev") or "").strip()
+              name_roman = (row.get("name_roman") or "").strip()
+              village_dev = (row.get("village_dev") or "").strip()
+              village_roman = (row.get("village_roman") or "").strip()
+              titles = (row.get("titles") or "").strip()
+              source_ref = (row.get("source_ref") or "").strip()
+              source_file = (row.get("source_file") or "").strip()
+
+              persons.append({
+                  "id": person_id,
+                  "name_dev": name_dev,
+                  "name_roman": name_roman,
+                  "label": name_roman or name_dev or person_id,
+                  "village_dev": village_dev,
+                  "village_roman": village_roman,
+                  "titles": titles,
+                  "source_ref": source_ref,
+                  "source_file": source_file,
+                  "type": "Person"
+              })
+
+          persons.sort(key=lambda p: (p.get("name_roman") or p.get("name_dev") or "").lower())
+
+          persons_json.write_text(
+              json.dumps(persons, ensure_ascii=False, indent=2),
+              encoding="utf-8"
+          )
+
+          # Create a small Cytoscape-compatible graph sample.
+          # For now it contains person nodes only. We will add edges once edge files are populated.
+          max_nodes = 500
+          elements = []
+
+          for p in persons[:max_nodes]:
+              elements.append({
+                  "data": {
+                      "id": p["id"],
+                      "label": p["label"],
+                      "name_dev": p["name_dev"],
+                      "name_roman": p["name_roman"],
+                      "village_dev": p["village_dev"],
+                      "village_roman": p["village_roman"],
+                      "source_ref": p["source_ref"],
+                      "type": "Person"
+                  }
+              })
+
+          graph = {
+              "generated_from": "data/persons.csv",
+              "node_count_total": len(persons),
+              "node_count_in_sample": len(elements),
+              "edge_count_in_sample": 0,
+              "elements": elements
+          }
+
+          graph_json.write_text(
+              json.dumps(graph, ensure_ascii=False, indent=2),
+              encoding="utf-8"
+          )
+
+          print(f"Generated {persons_json} with {len(persons)} persons")
+          print(f"Generated {graph_json} with {len(elements)} sample nodes")
+          PY
+
+      - name: Commit generated files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Generate static data for GitHub Pages viewer"
+          file_pattern: docs/data/persons.json docs/data/graph_sample.json
