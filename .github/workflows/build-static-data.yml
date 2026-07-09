@@ -23,8 +23,6 @@ jobs:
           python - <<'PY'
           import csv
           import json
-          import os
-          import re
           from pathlib import Path
 
           root = Path(".")
@@ -33,68 +31,77 @@ jobs:
           docs_data_dir.mkdir(parents=True, exist_ok=True)
 
           persons_csv = data_dir / "persons.csv"
+          child_edges_csv = data_dir / "child_of_edges.csv"
+          sibling_edges_csv = data_dir / "sibling_of_edges.csv"
+
           persons_json = docs_data_dir / "persons.json"
           graph_json = docs_data_dir / "graph_sample.json"
 
           if not persons_csv.exists():
               raise SystemExit("Missing data/persons.csv")
 
-          text = persons_csv.read_text(encoding="utf-8-sig")
-
-          # Some exported CSV files may have records separated by whitespace instead of clean newlines.
-          # This normalization inserts a newline before records that start with a 12-character hex id.
-          text = re.sub(r'"\s+"(?=[0-9a-fA-F]{12}",)', '"\n"', text)
-
-          # Also make sure the header is separated from the first record.
-          text = re.sub(
-              r'("source_file")\s+"(?=[0-9a-fA-F]{12}",)',
-              r'\1\n"',
-              text,
-              count=1
-          )
-
-          rows = list(csv.DictReader(text.splitlines()))
+          def read_csv_rows(path):
+              if not path.exists():
+                  print(f"Optional file missing: {path}")
+                  return []
+              with path.open("r", encoding="utf-8-sig", newline="") as f:
+                  return list(csv.DictReader(f))
 
           persons = []
-          for row in rows:
-              person_id = (row.get("id") or "").strip()
-              if not person_id:
-                  continue
+          person_ids = set()
 
-              name_dev = (row.get("name_dev") or "").strip()
-              name_roman = (row.get("name_roman") or "").strip()
-              village_dev = (row.get("village_dev") or "").strip()
-              village_roman = (row.get("village_roman") or "").strip()
-              titles = (row.get("titles") or "").strip()
-              source_ref = (row.get("source_ref") or "").strip()
-              source_file = (row.get("source_file") or "").strip()
+          with persons_csv.open("r", encoding="utf-8-sig", newline="") as f:
+              reader = csv.DictReader(f)
 
-              persons.append({
-                  "id": person_id,
-                  "name_dev": name_dev,
-                  "name_roman": name_roman,
-                  "label": name_roman or name_dev or person_id,
-                  "village_dev": village_dev,
-                  "village_roman": village_roman,
-                  "titles": titles,
-                  "source_ref": source_ref,
-                  "source_file": source_file,
-                  "type": "Person"
-              })
+              for row in reader:
+                  person_id = (row.get("id") or row.get("person_id") or "").strip()
+                  if not person_id:
+                      continue
 
-          persons.sort(key=lambda p: (p.get("name_roman") or p.get("name_dev") or "").lower())
+                  name_dev = (row.get("name_dev") or row.get("name") or "").strip()
+                  name_roman = (row.get("name_roman") or row.get("roman_name") or "").strip()
+                  village_dev = (row.get("village_dev") or "").strip()
+                  village_roman = (row.get("village_roman") or row.get("village") or "").strip()
+                  gotra = (row.get("gotra") or row.get("gotra_name") or "").strip()
+                  mool = (row.get("mool") or row.get("mool_name") or "").strip()
+                  titles = (row.get("titles") or "").strip()
+                  source_ref = (row.get("source_ref") or "").strip()
+                  source_file = (row.get("source_file") or "").strip()
+
+                  persons.append({
+                      "id": person_id,
+                      "name_dev": name_dev,
+                      "name_roman": name_roman,
+                      "label": name_roman or name_dev or person_id,
+                      "village_dev": village_dev,
+                      "village_roman": village_roman,
+                      "gotra": gotra,
+                      "mool": mool,
+                      "titles": titles,
+                      "source_ref": source_ref,
+                      "source_file": source_file,
+                      "type": "Person"
+                  })
+
+                  person_ids.add(person_id)
+
+          persons.sort(key=lambda p: (p.get("label") or "").lower())
 
           persons_json.write_text(
               json.dumps(persons, ensure_ascii=False, indent=2),
               encoding="utf-8"
           )
 
-          # Create a small Cytoscape-compatible graph sample.
-          # For now it contains person nodes only. We will add edges once edge files are populated.
+          person_by_id = {p["id"]: p for p in persons}
+
+          # Build graph sample with a manageable number of persons.
           max_nodes = 500
+          sample_persons = persons[:max_nodes]
+          sample_ids = {p["id"] for p in sample_persons}
+
           elements = []
 
-          for p in persons[:max_nodes]:
+          for p in sample_persons:
               elements.append({
                   "data": {
                       "id": p["id"],
@@ -103,16 +110,66 @@ jobs:
                       "name_roman": p["name_roman"],
                       "village_dev": p["village_dev"],
                       "village_roman": p["village_roman"],
+                      "gotra": p["gotra"],
+                      "mool": p["mool"],
                       "source_ref": p["source_ref"],
                       "type": "Person"
                   }
               })
 
+          edge_count = 0
+
+          def add_edge(source, target, relationship):
+              global edge_count
+              source = (source or "").strip()
+              target = (target or "").strip()
+
+              if not source or not target:
+                  return
+
+              # Only include edges where both endpoints are in the sample graph.
+              if source not in sample_ids or target not in sample_ids:
+                  return
+
+              edge_id = f"{relationship}_{source}_{target}"
+
+              elements.append({
+                  "data": {
+                      "id": edge_id,
+                      "source": source,
+                      "target": target,
+                      "relationship": relationship,
+                      "label": relationship
+                  }
+              })
+
+              edge_count += 1
+
+          # child_id,parent_id
+          for row in read_csv_rows(child_edges_csv):
+              add_edge(
+                  row.get("child_id"),
+                  row.get("parent_id"),
+                  "CHILD_OF"
+              )
+
+          # person_s_id,person_b_id
+          for row in read_csv_rows(sibling_edges_csv):
+              add_edge(
+                  row.get("person_a_id"),
+                  row.get("person_b_id"),
+                  "SIBLING_OF"
+              )
+
           graph = {
-              "generated_from": "data/persons.csv",
+              "generated_from": [
+                  "data/persons.csv",
+                  "data/child_of_edges.csv",
+                  "data/sibling_of_edges.csv"
+              ],
               "node_count_total": len(persons),
-              "node_count_in_sample": len(elements),
-              "edge_count_in_sample": 0,
+              "node_count_in_sample": len(sample_persons),
+              "edge_count_in_sample": edge_count,
               "elements": elements
           }
 
@@ -122,11 +179,14 @@ jobs:
           )
 
           print(f"Generated {persons_json} with {len(persons)} persons")
-          print(f"Generated {graph_json} with {len(elements)} sample nodes")
+          print(f"Generated {graph_json} with {len(sample_persons)} sample nodes and {edge_count} sample edges")
           PY
 
       - name: Commit generated files
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Generate static data for GitHub Pages viewer"
-          file_pattern: docs/data/persons.json docs/data/graph_sample.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/data/persons.json docs/data/graph_sample.json
+          git status
+          git commit -m "Generate static graph data with relationship edges" || echo "No changes to commit"
+          git push
