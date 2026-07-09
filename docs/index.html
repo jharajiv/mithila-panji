@@ -316,10 +316,27 @@
         }
 
         const graph = await response.json();
-        const allElements = Array.isArray(graph.elements) ? graph.elements : graph;
-        const elements = allElements.slice(0, 75);
+const allElements = Array.isArray(graph.elements) ? graph.elements : graph;
 
-        renderGraphElements(elements, "Loaded graph sample");
+// Keep a readable number of nodes, but also keep the edges between those nodes.
+const maxNodesToShow = 120;
+
+const allNodes = allElements.filter(el => el.data && !el.data.source && !el.data.target);
+const allEdges = allElements.filter(el => el.data && el.data.source && el.data.target);
+
+const visibleNodes = allNodes.slice(0, maxNodesToShow);
+const visibleNodeIds = new Set(visibleNodes.map(el => el.data.id));
+
+const visibleEdges = allEdges.filter(edge =>
+  visibleNodeIds.has(edge.data.source) && visibleNodeIds.has(edge.data.target)
+);
+
+const elements = [...visibleNodes, ...visibleEdges];
+
+renderGraphElements(
+  elements,
+  `Loaded graph sample from ${visibleNodes.length} nodes and ${visibleEdges.length} relationship edges`
+);
       } catch (error) {
         document.getElementById("nodeDetails").textContent =
           "Error loading graph: " + error.message;
