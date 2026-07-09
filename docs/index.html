@@ -215,18 +215,21 @@ function personSearchText(person) {
     }
 
     function runSearch() {
-      const query = document.getElementById("searchBox").value.trim().toLowerCase();
+      const rawQuery = document.getElementById("searchBox").value.trim();
+const queryTerms = expandQuery(rawQuery);
       const results = document.getElementById("results");
 
-      if (!query) {
-        results.innerHTML = "";
-        return;
-      }
+      if (!rawQuery) {
+  results.innerHTML = "";
+  return;
+}
 
-      const matches = persons
-        .filter(person => personSearchText(person).includes(query))
-        .slice(0, 50);
-
+const matches = persons
+  .filter(person => {
+    const searchText = personSearchText(person);
+    return queryTerms.some(term => searchText.includes(term));
+  })
+  .slice(0, 50);
       if (matches.length === 0) {
         results.innerHTML = "<p>No matching records found.</p>";
         return;
