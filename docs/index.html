@@ -158,7 +158,8 @@
 
   <div class="graph-toolbar">
     <button onclick="loadGraph()">Load graph sample</button>
-    <button onclick="fitGraph()">Fit graph</button>
+<button onclick="graphCurrentSearch()">Graph current search results</button>
+<button onclick="fitGraph()">Fit graph</button>
   </div>
 
   <div id="cy" style="width:100%; height:650px; background:#ffffff; border:1px solid #ddd; border-radius:6px; margin-top:12px;"></div>
@@ -175,7 +176,8 @@
 
   <script>
         let persons = [];
-        let cy = null;
+let cy = null;
+let lastMatches = [];
 
     function escapeHtml(value) {
       return String(value)
@@ -288,6 +290,8 @@ const matches = persons
     return queryTerms.some(term => searchText.includes(term));
   })
   .slice(0, 50);
+
+lastMatches = matches;
       if (matches.length === 0) {
         results.innerHTML = "<p>No matching records found.</p>";
         return;
@@ -399,7 +403,104 @@ const matches = persons
           "Error loading graph: " + error.message;
       }
     }
+function personToCyNode(person) {
+  const name =
+    person.name ||
+    person.full_name ||
+    person.person_name ||
+    person.name_roman ||
+    person.name_dev ||
+    person.label ||
+    person.id ||
+    "Unnamed record";
 
+  return {
+    data: {
+      id: person.id,
+      label: name,
+      name_dev: person.name_dev || "",
+      name_roman: person.name_roman || "",
+      village_dev: person.village_dev || "",
+      village_roman: person.village_roman || "",
+      gotra: person.gotra || "",
+      mool: person.mool || "",
+      source_ref: person.source_ref || "",
+      type: "Person"
+    }
+  };
+}
+
+function renderGraphElements(elements, messagePrefix) {
+  cy = cytoscape({
+    container: document.getElementById("cy"),
+    elements: elements,
+    style: [
+      {
+        selector: "node",
+        style: {
+          "label": "data(label)",
+          "font-size": "13px",
+          "text-valign": "bottom",
+          "text-halign": "center",
+          "text-margin-y": "8px",
+          "background-color": "#607d8b",
+          "color": "#222",
+          "width": 36,
+          "height": 36
+        }
+      },
+      {
+        selector: "edge",
+        style: {
+          "width": 1,
+          "line-color": "#aaa",
+          "target-arrow-color": "#aaa",
+          "target-arrow-shape": "triangle",
+          "curve-style": "bezier",
+          "label": "data(relationship)",
+          "font-size": "9px"
+        }
+      }
+    ],
+    layout: {
+      name: "grid",
+      fit: true,
+      padding: 40
+    }
+  });
+
+  cy.on("tap", "node", function(event) {
+    const data = event.target.data();
+
+    document.getElementById("nodeDetails").innerHTML = `
+      <strong>${escapeHtml(data.label || data.id)}</strong>
+      <div class="muted">ID: ${escapeHtml(data.id || "")}</div>
+      ${data.name_dev ? `<div>Name Devanagari: ${escapeHtml(data.name_dev)}</div>` : ""}
+      ${data.name_roman ? `<div>Name Roman: ${escapeHtml(data.name_roman)}</div>` : ""}
+      ${data.village_dev ? `<div>Village Devanagari: ${escapeHtml(data.village_dev)}</div>` : ""}
+      ${data.village_roman ? `<div>Village Roman: ${escapeHtml(data.village_roman)}</div>` : ""}
+      ${data.gotra ? `<div>Gotra: ${escapeHtml(data.gotra)}</div>` : ""}
+      ${data.mool ? `<div>Mool: ${escapeHtml(data.mool)}</div>` : ""}
+      ${data.source_ref ? `<div>Source: ${escapeHtml(data.source_ref)}</div>` : ""}
+    `;
+  });
+
+  document.getElementById("nodeDetails").textContent =
+    `${messagePrefix}: ${cy.nodes().length} nodes and ${cy.edges().length} edges. Click a node to view details.`;
+}
+
+function graphCurrentSearch() {
+  if (!lastMatches || lastMatches.length === 0) {
+    document.getElementById("nodeDetails").textContent =
+      "Please search first, then click 'Graph current search results'.";
+    return;
+  }
+
+  const maxNodes = 50;
+  const elements = lastMatches.slice(0, maxNodes).map(personToCyNode);
+
+  renderGraphElements(elements, "Loaded graph from current search results");
+}
     function fitGraph() {
       if (cy) {
         cy.fit();
@@ -418,7 +519,8 @@ async function loadGraph() {
     }
 
     const graph = await response.json();
-    const elements = Array.isArray(graph.elements) ? graph.elements : graph;
+    const allElements = Array.isArray(graph.elements) ? graph.elements : graph;
+const elements = allElements.slice(0, 75);
 
     cy = cytoscape({
       container: document.getElementById("cy"),
