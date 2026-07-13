@@ -15,6 +15,7 @@
     input { width: 100%; max-width: 650px; padding: 11px; font-size: 16px; margin-bottom: 16px; border: 1px solid #bbb; border-radius: 6px; }
     .notice { background: #fff8e1; border: 1px solid #e5d28a; padding: 13px; margin-bottom: 22px; border-radius: 6px; line-height: 1.45; }
     .result { background: white; border: 1px solid #ddd; padding: 13px; margin: 9px 0; border-radius: 6px; }
+    .result.active { border-color: #607d8b; box-shadow: 0 0 0 2px rgba(96,125,139,.25); }
     .result strong { font-size: 18px; }
     .muted { color: #666; font-size: 14px; margin-top: 5px; }
     pre { white-space: pre-wrap; background: #f6f6f6; padding: 10px; border-radius: 5px; overflow-x: auto; }
@@ -22,7 +23,13 @@
     #cy { width: 100%; height: 650px; background: #fff; border: 1px solid #ddd; border-radius: 6px; margin-top: 12px; }
     button { padding: 9px 13px; font-size: 14px; border: 1px solid #999; border-radius: 5px; background: #fff; cursor: pointer; margin-right: 8px; margin-bottom: 8px; }
     button:hover { background: #f1f1f1; }
+    button.link-btn { border: 1px solid #607d8b; color: #607d8b; padding: 3px 10px; font-size: 13px; margin: 4px 4px 0 0; }
     #nodeDetails { background: #fff; border: 1px solid #ddd; padding: 12px; border-radius: 6px; margin-top: 12px; font-size: 14px; }
+    #ancestryChain { font-size: 14px; margin-top: 10px; line-height: 1.6; }
+    #shareBox { display: none; margin-top: 10px; }
+    #shareBox input { width: 100%; max-width: none; font-size: 13px; padding: 7px 9px; margin-bottom: 6px; }
+    .legend { font-size: 12px; color: #666; margin-top: 8px; }
+    .legend span { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
     footer { margin-top: 30px; padding-top: 15px; border-top: 1px solid #ddd; color: #666; font-size: 14px; }
   </style>
 </head>
@@ -49,19 +56,33 @@
     <div id="results"></div>
 
     <section class="viewer-section">
-      <h2>Graph sample view</h2>
+      <h2>Lineage view</h2>
       <p class="muted">
-        This sample graph is generated from the static data and includes available CHILD_OF and SIBLING_OF relationship edges.
+        Click “View lineage” on a search result to see everything the corpus records about that
+        person's ancestors, descendants, and siblings, computed from the full relationship data
+        (not a sample).
       </p>
 
-      <button onclick="loadGraph()">Load graph sample</button>
-      <button onclick="graphCurrentSearch()">Graph current search results</button>
       <button onclick="fitGraph()">Fit graph</button>
 
       <div id="cy"></div>
+      <div class="legend">
+        <span style="background:#8a2a2a"></span> selected person
+        <span style="background:#c98a3a"></span> ancestor
+        <span style="background:#3a7bc9"></span> descendant
+        <span style="background:#5aa06a"></span> sibling
+      </div>
+
+      <div id="ancestryChain"></div>
 
       <div id="nodeDetails">
-        Click “Load graph sample” or search first and then click “Graph current search results.”
+        Search above, then click “View lineage” on a result.
+      </div>
+
+      <div id="shareBox">
+        <div class="muted">Shareable link to this lineage:</div>
+        <input id="shareLink" readonly onclick="this.select()" />
+        <button onclick="copyShareLink()">Copy link</button>
       </div>
     </section>
 
@@ -72,8 +93,16 @@
 
   <script>
     let persons = [];
+    let personById = new Map();
+    let parentsOf = new Map();   // childId -> [parentId, ...]
+    let childrenOf = new Map();  // parentId -> [childId, ...]
+    let siblingsOf = new Map();  // id -> Set(siblingId)
     let cy = null;
     let lastMatches = [];
+
+    const MAX_ANCESTOR_GENERATIONS = 20;
+    const MAX_DESCENDANT_GENERATIONS = 8;
+    const MAX_LINEAGE_NODES = 300;
 
     function escapeHtml(value) {
       return String(value)
@@ -128,8 +157,8 @@
       return normalizeSearchText(Object.values(person).map(valueText).join(" "));
     }
 
-    function renderPerson(person) {
-      const name =
+    function personLabel(person) {
+      return (
         person.name ||
         person.full_name ||
         person.person_name ||
@@ -137,7 +166,12 @@
         person.name_dev ||
         person.label ||
         person.id ||
-        "Unnamed record";
+        "Unnamed record"
+      );
+    }
+
+    function renderPerson(person) {
+      const name = personLabel(person);
 
       const details = [
         person.gotra ? "Gotra: " + person.gotra : "",
@@ -148,11 +182,14 @@
       ].filter(Boolean).join(" | ");
 
       return `
-        <div class="result">
+        <div class="result" id="result-${escapeHtml(person.id)}">
           <strong>${escapeHtml(name)}</strong>
           ${person.name_dev && person.name_dev !== name ? `<div>${escapeHtml(person.name_dev)}</div>` : ""}
           <div class="muted">${escapeHtml(details || "No additional metadata available")}</div>
           ${person.source_file ? `<div class="muted">Source file: ${escapeHtml(person.source_file)}</div>` : ""}
+          <div>
+            <button class="link-btn" onclick="viewLineage('${person.id}')">View lineage</button>
+          </div>
           <details>
             <summary>View raw record</summary>
             <pre>${escapeHtml(JSON.stringify(person, null, 2))}</pre>
@@ -195,45 +232,68 @@
 
     async function loadData() {
       try {
-        const response = await fetch("data/persons.json");
+        const [personsRes, edgesRes] = await Promise.all([
+          fetch("data/persons.json"),
+          fetch("data/edges.json")
+        ]);
 
-        if (!response.ok) {
-          throw new Error("Could not load data/persons.json");
-        }
+        if (!personsRes.ok) throw new Error("Could not load data/persons.json");
+        if (!edgesRes.ok) throw new Error("Could not load data/edges.json");
 
-        const data = await response.json();
+        const personsData = await personsRes.json();
+        const edgesData = await edgesRes.json();
 
-        if (Array.isArray(data)) {
-          persons = data;
-        } else if (Array.isArray(data.persons)) {
-          persons = data.persons;
-        } else if (Array.isArray(data.records)) {
-          persons = data.records;
+        if (Array.isArray(personsData)) {
+          persons = personsData;
+        } else if (Array.isArray(personsData.persons)) {
+          persons = personsData.persons;
+        } else if (Array.isArray(personsData.records)) {
+          persons = personsData.records;
         } else {
           throw new Error("Could not find a persons array in persons.json");
         }
 
+        personById = new Map(persons.map(p => [p.id, p]));
+
+        for (const [childId, parentId] of edgesData.child_of || []) {
+          if (!parentsOf.has(childId)) parentsOf.set(childId, []);
+          parentsOf.get(childId).push(parentId);
+
+          if (!childrenOf.has(parentId)) childrenOf.set(parentId, []);
+          childrenOf.get(parentId).push(childId);
+        }
+
+        for (const [aId, bId] of edgesData.sibling_of || []) {
+          if (!siblingsOf.has(aId)) siblingsOf.set(aId, new Set());
+          if (!siblingsOf.has(bId)) siblingsOf.set(bId, new Set());
+          siblingsOf.get(aId).add(bId);
+          siblingsOf.get(bId).add(aId);
+        }
+
         document.getElementById("status").textContent =
-          `Loaded ${persons.length.toLocaleString()} person records. Enter a search term above.`;
+          `Loaded ${persons.length.toLocaleString()} person records ` +
+          `and ${(edgesData.child_of || []).length + (edgesData.sibling_of || []).length} relationship edges. ` +
+          `Enter a search term above.`;
+
+        const params = new URLSearchParams(location.search);
+        const deepLinkId = params.get("person");
+        if (deepLinkId && personById.has(deepLinkId)) {
+          document.getElementById("searchBox").value = personLabel(personById.get(deepLinkId));
+          runSearch();
+          viewLineage(deepLinkId, { updateUrl: false });
+          document.getElementById("cy").scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       } catch (error) {
         document.getElementById("status").textContent =
           "Error loading data: " + error.message;
       }
     }
 
-    function personToCyNode(person) {
-      const name =
-        person.name ||
-        person.full_name ||
-        person.person_name ||
-        person.name_roman ||
-        person.name_dev ||
-        person.label ||
-        person.id ||
-        "Unnamed record";
+    function personToCyNode(person, extra) {
+      const name = personLabel(person);
 
       return {
-        data: {
+        data: Object.assign({
           id: person.id,
           label: name,
           name_dev: person.name_dev || "",
@@ -244,7 +304,7 @@
           mool: person.mool || "",
           source_ref: person.source_ref || "",
           type: "Person"
-        }
+        }, extra || {})
       };
     }
 
@@ -268,6 +328,22 @@
             }
           },
           {
+            selector: "node.root",
+            style: { "background-color": "#8a2a2a", "width": 46, "height": 46 }
+          },
+          {
+            selector: "node.ancestor",
+            style: { "background-color": "#c98a3a" }
+          },
+          {
+            selector: "node.descendant",
+            style: { "background-color": "#3a7bc9" }
+          },
+          {
+            selector: "node.sibling",
+            style: { "background-color": "#5aa06a" }
+          },
+          {
             selector: "edge",
             style: {
               "width": 1,
@@ -281,9 +357,11 @@
           }
         ],
         layout: {
-          name: "grid",
+          name: "breadthfirst",
           fit: true,
-          padding: 40
+          padding: 40,
+          directed: false,
+          spacingFactor: 1.2
         }
       });
 
@@ -300,6 +378,9 @@
           ${data.gotra ? `<div>Gotra: ${escapeHtml(data.gotra)}</div>` : ""}
           ${data.mool ? `<div>Mool: ${escapeHtml(data.mool)}</div>` : ""}
           ${data.source_ref ? `<div>Source: ${escapeHtml(data.source_ref)}</div>` : ""}
+          <div style="margin-top:8px">
+            <button class="link-btn" onclick="viewLineage('${escapeHtml(data.id)}')">View this person's lineage</button>
+          </div>
         `;
       });
 
@@ -307,51 +388,172 @@
         `${messagePrefix}: ${cy.nodes().length} nodes and ${cy.edges().length} edges. Click a node to view details.`;
     }
 
-    async function loadGraph() {
-      try {
-        const response = await fetch("data/graph_sample.json");
+    // Walk parentsOf upward from `id`, collecting every ancestor node and
+    // CHILD_OF edge reachable within MAX_ANCESTOR_GENERATIONS. A person can
+    // have more than one recorded parent (conflicting sources), so this is
+    // a breadth-first fan-out, not a single chain.
+    function collectAncestors(id) {
+      const nodes = new Map();
+      const edges = [];
+      let frontier = [id];
+      let gen = 0;
 
-        if (!response.ok) {
-          throw new Error("Could not load data/graph_sample.json");
+      while (frontier.length && gen < MAX_ANCESTOR_GENERATIONS && nodes.size < MAX_LINEAGE_NODES) {
+        const next = [];
+        for (const childId of frontier) {
+          const parents = parentsOf.get(childId) || [];
+          for (const parentId of parents) {
+            if (!personById.has(parentId)) continue;
+            edges.push([childId, parentId]);
+            if (!nodes.has(parentId)) {
+              nodes.set(parentId, gen + 1);
+              next.push(parentId);
+            }
+          }
         }
-
-        const graph = await response.json();
-const allElements = Array.isArray(graph.elements) ? graph.elements : graph;
-
-// Keep a readable number of nodes, but also keep the edges between those nodes.
-const maxNodesToShow = 120;
-
-const allNodes = allElements.filter(el => el.data && !el.data.source && !el.data.target);
-const allEdges = allElements.filter(el => el.data && el.data.source && el.data.target);
-
-const visibleNodes = allNodes.slice(0, maxNodesToShow);
-const visibleNodeIds = new Set(visibleNodes.map(el => el.data.id));
-
-const visibleEdges = allEdges.filter(edge =>
-  visibleNodeIds.has(edge.data.source) && visibleNodeIds.has(edge.data.target)
-);
-
-const elements = [...visibleNodes, ...visibleEdges];
-
-renderGraphElements(
-  elements,
-  `Loaded graph sample from ${visibleNodes.length} nodes and ${visibleEdges.length} relationship edges`
-);
-      } catch (error) {
-        document.getElementById("nodeDetails").textContent =
-          "Error loading graph: " + error.message;
+        frontier = next;
+        gen += 1;
       }
+
+      return { nodes, edges };
     }
 
-    function graphCurrentSearch() {
-      if (!lastMatches || lastMatches.length === 0) {
-        document.getElementById("nodeDetails").textContent =
-          "Please search first, then click 'Graph current search results'.";
+    // Walk childrenOf downward from `id`. Family trees can be large, so this
+    // is capped by both generation depth and total node count; if the cap is
+    // hit the lineage view says so rather than silently truncating.
+    function collectDescendants(id) {
+      const nodes = new Map();
+      const edges = [];
+      let frontier = [id];
+      let gen = 0;
+      let truncated = false;
+
+      while (frontier.length && gen < MAX_DESCENDANT_GENERATIONS) {
+        const next = [];
+        for (const parentId of frontier) {
+          const children = childrenOf.get(parentId) || [];
+          for (const childId of children) {
+            if (!personById.has(childId)) continue;
+            if (nodes.size >= MAX_LINEAGE_NODES) { truncated = true; break; }
+            edges.push([childId, parentId]);
+            if (!nodes.has(childId)) {
+              nodes.set(childId, gen + 1);
+              next.push(childId);
+            }
+          }
+          if (nodes.size >= MAX_LINEAGE_NODES) { truncated = true; break; }
+        }
+        frontier = next;
+        gen += 1;
+      }
+
+      return { nodes, edges, truncated };
+    }
+
+    function renderAncestryChain(id, ancestorNodes) {
+      const container = document.getElementById("ancestryChain");
+      // Prefer the deepest chain by following the first recorded parent at
+      // each step (matches the old "trace to root" behaviour).
+      const chain = [personById.get(id)];
+      let currentId = id;
+      const seen = new Set([id]);
+      while (true) {
+        const parents = parentsOf.get(currentId) || [];
+        const parentId = parents.find(p => personById.has(p) && !seen.has(p));
+        if (!parentId) break;
+        chain.push(personById.get(parentId));
+        seen.add(parentId);
+        currentId = parentId;
+      }
+
+      if (chain.length <= 1) {
+        container.innerHTML = "";
         return;
       }
 
-      const elements = lastMatches.slice(0, 50).map(personToCyNode);
-      renderGraphElements(elements, "Loaded graph from current search results");
+      container.innerHTML =
+        "<strong>Ancestry chain:</strong> " +
+        chain.map(p => escapeHtml(personLabel(p))).reverse().join(" &rarr; ");
+    }
+
+    function viewLineage(id, opts) {
+      const options = opts || {};
+      const person = personById.get(id);
+      if (!person) {
+        document.getElementById("nodeDetails").textContent = "Unknown person id: " + id;
+        return;
+      }
+
+      document.querySelectorAll(".result.active").forEach(el => el.classList.remove("active"));
+      const resultEl = document.getElementById("result-" + id);
+      if (resultEl) resultEl.classList.add("active");
+
+      const ancestors = collectAncestors(id);
+      const descendants = collectDescendants(id);
+      const siblingIds = [...(siblingsOf.get(id) || [])].filter(sid => personById.has(sid));
+
+      const elements = [];
+      const addedIds = new Set();
+
+      function addNode(nodeId, cls) {
+        if (addedIds.has(nodeId)) return;
+        addedIds.add(nodeId);
+        elements.push(personToCyNode(personById.get(nodeId), { classes: cls }));
+      }
+
+      addNode(id, "root");
+      for (const parentId of ancestors.nodes.keys()) addNode(parentId, "ancestor");
+      for (const childId of descendants.nodes.keys()) addNode(childId, "descendant");
+      for (const sibId of siblingIds) addNode(sibId, "sibling");
+
+      elements.forEach(el => { el.classes = el.data.classes || ""; });
+
+      for (const [childId, parentId] of ancestors.edges) {
+        elements.push({ data: { id: `co_${childId}_${parentId}`, source: childId, target: parentId, relationship: "CHILD_OF", label: "child of" } });
+      }
+      for (const [childId, parentId] of descendants.edges) {
+        elements.push({ data: { id: `co_${childId}_${parentId}`, source: childId, target: parentId, relationship: "CHILD_OF", label: "child of" } });
+      }
+      for (const sibId of siblingIds) {
+        const pairId = [id, sibId].sort().join("_");
+        if (!elements.some(el => el.data.id === `sib_${pairId}`)) {
+          elements.push({ data: { id: `sib_${pairId}`, source: id, target: sibId, relationship: "SIBLING_OF", label: "sibling of" } });
+        }
+      }
+
+      const parts = [];
+      if (ancestors.nodes.size) parts.push(`${ancestors.nodes.size} ancestor${ancestors.nodes.size === 1 ? "" : "s"}`);
+      if (descendants.nodes.size) parts.push(`${descendants.nodes.size} descendant${descendants.nodes.size === 1 ? "" : "s"}${descendants.truncated ? " (truncated — tree is larger)" : ""}`);
+      if (siblingIds.length) parts.push(`${siblingIds.length} sibling${siblingIds.length === 1 ? "" : "s"}`);
+
+      const message = parts.length
+        ? `Lineage for ${personLabel(person)}: ${parts.join(", ")}`
+        : `No recorded relationships for ${personLabel(person)}`;
+
+      renderGraphElements(elements, message);
+      renderAncestryChain(id, ancestors.nodes);
+
+      if (options.updateUrl !== false) {
+        const url = new URL(location.href);
+        url.searchParams.set("person", id);
+        history.pushState({ person: id }, "", url);
+      }
+
+      const shareBox = document.getElementById("shareBox");
+      const shareUrl = new URL(location.href);
+      shareUrl.searchParams.set("person", id);
+      document.getElementById("shareLink").value = shareUrl.toString();
+      shareBox.style.display = "block";
+    }
+
+    function copyShareLink() {
+      const input = document.getElementById("shareLink");
+      input.select();
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(input.value).catch(() => document.execCommand("copy"));
+      } else {
+        document.execCommand("copy");
+      }
     }
 
     function fitGraph() {
@@ -360,7 +562,16 @@ renderGraphElements(
       }
     }
 
+    window.addEventListener("popstate", () => {
+      const params = new URLSearchParams(location.search);
+      const id = params.get("person");
+      if (id && personById.has(id)) viewLineage(id, { updateUrl: false });
+    });
+
     document.getElementById("searchBox").addEventListener("input", runSearch);
+    window.viewLineage = viewLineage;
+    window.fitGraph = fitGraph;
+    window.copyShareLink = copyShareLink;
     loadData();
   </script>
 </body>
