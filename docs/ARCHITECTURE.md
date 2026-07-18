@@ -170,20 +170,20 @@ one university library for a dark archive).
 
 ## The minimum-viable first release
 
-For a first public release, the project does not need every layer above.
-A defensible MVP looks like this:
+The current MVP is **fully static** — no database subscription required:
 
-- Layer 3a: Neo4j AuraDB Free populated with the gotra/mool seed graph
-  plus the cleaned persons from the 2009 Thakur volumes (the artifacts
-  already in `data/`).
-- Layer 5a: a single-page web UI offering search, view-tree, and a
-  contact form for source contributors. This is `docs/index.html`,
-  published on GitHub Pages.
-- No writes from the public yet; all extensions go through GitHub issues
-  while moderation is being set up.
+- **Data layer:** CSVs in `data/` (persons, relationships, villages,
+  gotras, mools). These are the single source of truth.
+- **Build step:** GitHub Actions workflow runs on every data push,
+  calling `scripts/build_static_data.py` to convert CSVs into
+  `docs/data/persons.json` and `docs/data/edges.json`.
+- **Frontend:** Single-page HTML + JavaScript at `docs/index.html`,
+  served via GitHub Pages. Performs all search and lineage traversal
+  client-side.
+- **Cost:** ₹0/month (free GitHub Pages, free Actions).
 
-The full setup is in [`MVP_SETUP.md`](MVP_SETUP.md) — eight steps,
-about 60–90 minutes total, no coding required from the operator.
+This MVP lives at `https://<your-username>.github.io/mithila-panji/`.
+See [`MVP_SETUP.md`](MVP_SETUP.md) for a 5-minute deployment.
 
 ## Cross-graph connects
 
