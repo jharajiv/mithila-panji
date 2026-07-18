@@ -2,7 +2,7 @@
 ### Digitizing the Panji Tradition to Trace Every Family Back to Its Ādibīja
 
 **Rajiv Jha** · *Independent researcher* · rajiv.jha@myvyoma.io
-*Project: [Mithila-Panji](https://github.com/REPLACE-WITH-YOUR-USERNAME/mithila-panji) — public release, May 2026*
+*Project: [Mithila-Panji](https://github.com/jharajiv/mithila-panji) — public release, May 2026*
 
 ---
 
@@ -143,7 +143,7 @@ This is not a project that one person can carry, and it is not appropriate that 
 
 The Panji Prabandh of Mithila is a quiet, almost invisible achievement of the Maithil community: seven centuries of disciplined record-keeping, sustained by hereditary scribes, recording the connections between families one marriage at a time. It is not yet lost. It is, however, well into the period of its life in which decisions taken now — to digitise, or not; to structure, or not; to invite the community in, or not — will determine whether the next seven centuries inherit the record or merely the memory of it.
 
-The proposal of this paper is that the appropriate response is technical, communal, and unhurried in equal measure. A graph database, openly stewarded, ingesting the work of the Panjikars who have already begun the modern preservation effort and inviting the families themselves to extend it, is one form that response can take. The repository accompanying this article — at https://github.com/REPLACE-WITH-YOUR-USERNAME/mithila-panji — is the first iteration of that response.
+The proposal of this paper is that the appropriate response is technical, communal, and unhurried in equal measure. A graph database, openly stewarded, ingesting the work of the Panjikars who have already begun the modern preservation effort and inviting the families themselves to extend it, is one form that response can take. The repository accompanying this article — at https://github.com/jharajiv/mithila-panji — is the first iteration of that response.
 
 Readers willing to contribute material, time, or expertise are invited to write to the author at *rajiv.jha@myvyoma.io* or to open a GitHub issue in the repository.
 
